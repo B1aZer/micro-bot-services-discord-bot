@@ -1,4 +1,5 @@
 const { msg } = require("discord.js");
+const prefix = '!';
 const cooldowns = new Map();
 const validPermissions = [
   "CREATE_INSTANT_INVITE",
@@ -35,15 +36,14 @@ const validPermissions = [
 ]
 
 module.exports = (Discord, client, msg) => {
-  const prefix = '!';
   if (!msg.content.startsWith(prefix) || msg.author.bot) return;
   const args = msg.content.slice(prefix.length).split(/ +/);
   const cmd = args.shift().toLowerCase();
 
-  const command = client.commands.get(cmd);
+  const command = client.commands.get(cmd) || client.commands.find(a => a.aliases && a.aliases.includes(cmd));
   if (!command) return;
-  // PERMISSIONS CHECK  
-  if (command.permissions.length) {
+  // TODO: DM won't work PERMISSIONS CHECK  
+  if (command.permissions && command.permissions.length) {
     let invalidPerms = []
     for (const perm of command.permissions) {
       if (!validPermissions.includes(perm)) {

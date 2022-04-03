@@ -2,7 +2,7 @@ require('dotenv').config();
 var path = require('path');
 const mongoose = require('mongoose');
 const Discord = require("discord.js")
-const Keyv = require('keyv')
+// const Keyv = require('keyv')
 
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"], partials: ["CHANNEL"] })
 
