@@ -12,7 +12,7 @@ module.exports = (Discord, client, message) => {
   // NO COMMAND FOUND
   if (!command) return;
   // PERMISSIONS
-  if (!permissions.check(message, command)) return;
+  if (!permissions.check(message, command, client)) return;
   // COOLDOWNS
   if (!cooldowns.set(message, command, Discord)) return;
   // EXECUTE

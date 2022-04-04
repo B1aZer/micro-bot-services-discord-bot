@@ -3,7 +3,7 @@ const RedditImageFetcher = require("reddit-image-fetcher");
 module.exports = {
     name: 'motivate',
     aliases: ['mv'],
-    cooldown: 10,
+    cooldown: 3,
     description: 'Show a motivation image.',
     async execute(message, args, client, _Discord) {
         RedditImageFetcher.fetch({

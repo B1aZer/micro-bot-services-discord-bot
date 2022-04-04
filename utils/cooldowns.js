@@ -2,7 +2,7 @@ const cooldowns = new Map();
 
 module.exports = {
     set: (message, command, _Discord) => {
-        // COOLDOWN CHECK
+        
         if (!cooldowns.has(command.name)) {
             cooldowns.set(command.name, new _Discord.Collection());
         }

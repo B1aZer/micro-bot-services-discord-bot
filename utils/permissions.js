@@ -1,3 +1,4 @@
+const serverId = '958742337394208808';
 const validPermissions = [
     "CREATE_INSTANT_INVITE",
     "KICK_MEMBERS",
@@ -33,10 +34,10 @@ const validPermissions = [
 ]
 
 module.exports = {
-    check: async (message, command) => {
-        // TODO: DM won't work PERMISSIONS CHECK  
+    check: async (message, command, client) => {
+        let member = message.member;
+        let invalidPerms = [];
         if (command.permissions && command.permissions.length) {
-            let invalidPerms = [];
             for (const perm of command.permissions) {
                 if (!validPermissions.includes(perm)) {
                     console.log(`Invalid Permissions ${perm}`);
@@ -44,21 +45,18 @@ module.exports = {
                 }
                 // IF DM
                 if (!message.guild) {
-                    //let guild = await client.guilds.fetch('THE ID OF THE GUILD YOU WANT TO SEE THE USER’S PERMS IN')
-                    //let member = await guild.members.fetch(message.author.id);
-                    console.log(`CHECK DM PERMISSIONS`);
-                    // IF NOT DM
-                } else {
-                    if (!message.member.permissions.has(perm)) {
-                        invalidPerms.push(perm);
-                    }
+                    let guild = await client.guilds.fetch(serverId)
+                    member = await guild.members.fetch(message.author.id);
+                }
+                if (!member.permissions.has(perm)) {
+                    invalidPerms.push(perm);
                 }
             }
-            if (invalidPerms.length) {
-                message.channel.send(`Missing Permissions: \`${invalidPerms}\``);
-                return;
-            }
-            return true;
         }
+        if (invalidPerms.length) {
+            message.channel.send(`Missing Permissions: \`${invalidPerms}\``);
+            return;
+        }
+        return true;
     }
 }

@@ -5,7 +5,6 @@ module.exports = {
     name: 'test',
     description: 'test',
     permissions: ["ADMINISTRATOR"],
-    cooldown: 10,
     async execute(message, args, client, _Discord) {
         if (message.attachments.size > 0) {
             for (const msgFile of message.attachments) {
