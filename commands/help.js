@@ -5,7 +5,7 @@ module.exports = {
     aliases: ['hh'],
     description: 'Show this help message.',
     cooldown: 10,
-    async execute(message, args, client, _Discord) {
+    async execute(message, args, client, command, _Discord) {
         command_files = fs.readdirSync('./commands').filter(file => file.endsWith('js'));
         //TODO: not admin commands
         for(const file of command_files) {

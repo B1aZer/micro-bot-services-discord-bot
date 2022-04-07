@@ -34,7 +34,7 @@ const validPermissions = [
 ]
 
 module.exports = {
-    check: async (message, command, client) => {
+    check: async (message, args, client, command, _Discord) => {
         let member = message.member;
         let invalidPerms = [];
         if (command.permissions && command.permissions.length) {

@@ -4,8 +4,11 @@ module.exports = {
     name: 'read',
     aliases: ['rd'],
     description: 'Read task description.',
-    async execute(message, args, client, _Discord) {
-        if (!args[0]) return message.channel.send('Please enter a task ID');
+    async execute(message, args, client, command, _Discord) {
+        if (!args[0]) {
+            message.channel.send('Please enter a task ID');
+            return;
+        }
         try {
             let task = await taskModel.findById(args[0]);
             const embed = new _Discord.MessageEmbed()

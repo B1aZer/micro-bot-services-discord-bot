@@ -5,7 +5,7 @@ module.exports = {
     name: 'test',
     description: 'test',
     permissions: ["ADMINISTRATOR"],
-    async execute(message, args, client, _Discord) {
+    async execute(message, args, client, command, _Discord) {
         if (message.attachments.size > 0) {
             for (const msgFile of message.attachments) {
                 axios(msgFile[1].attachment).then(async function (response) {
