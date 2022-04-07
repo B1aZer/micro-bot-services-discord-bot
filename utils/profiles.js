@@ -1,0 +1,20 @@
+const profileModel = require('../models/profile');
+
+module.exports = {
+    get: async (message, userID, client) => {
+        let profileData;
+        try {
+            profileData = await profileModel.findOne({userID: message.author.id, guildID: message.guild.id})
+            if (!profileData) {
+                profileData = await profileModel.create({
+                    userID: message.author.id,
+                    guildID: message.guild.id,
+                    xp: 0,
+                })
+            }
+        } catch (err) {
+            console.log(err);
+        }
+        return profileData;
+    }
+}
