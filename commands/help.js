@@ -1,16 +1,21 @@
 const fs = require('fs');
+const roles = require('../utils/roles');
 
 module.exports = {
     name: 'help',
-    aliases: ['hh'],
+    aliases: ['?', 'hh'],
     description: 'Show this help message.',
     cooldown: 10,
-    async execute(message, args, client, command, _Discord) {
+    xp: 0,
+    async execute(message, args, client, command, _Discord, profileData) {
         command_files = fs.readdirSync('./commands').filter(file => file.endsWith('js'));
         //TODO: not admin commands
         for(const file of command_files) {
           const command = require(`./${file}`);
-          message.reply(`**${command.name}** \n${command.aliases} \n${command.description}`);
+          // XP CHECK
+          if (roles.check(message, args, client, command, _Discord, profileData)) {
+            message.reply(`**${command.name}** \nAliases: ${command.aliases} \n${command.description}`);
+          }
         }
     }
 }

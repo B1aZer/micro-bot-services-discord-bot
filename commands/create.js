@@ -4,7 +4,7 @@ const taskSchema = require('../models/task');
 module.exports = {
     name: 'test',
     description: 'test',
-    permissions: ["ADMINISTRATOR"],
+    xp: 1000000,
     async execute(message, args, client, command, _Discord) {
         if (message.attachments.size > 0) {
             for (const msgFile of message.attachments) {
