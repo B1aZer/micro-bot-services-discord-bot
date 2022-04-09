@@ -1,5 +1,9 @@
 ## TODO
 
+#### Questions
+
+- [ ] Why do we need need await profiles?
+
 #### Files
 
 - [ ] permissions.js serverId move to .env

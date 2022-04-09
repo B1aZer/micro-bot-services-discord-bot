@@ -4,6 +4,7 @@ module.exports = {
     name: 'givexp',
     aliases: ['xp'],
     description: 'Give an XP to the user',
+    role: 'Tester',
     async execute(message, args, client, command, _Discord) {
         if (!args[0]) {
             message.channel.send('Please provide an xp value');

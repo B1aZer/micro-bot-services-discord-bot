@@ -7,7 +7,7 @@ module.exports = {
     name: 'answer',
     aliases: ['aw'],
     description: 'Answer the task to gain XP.',
-    xp: 100,
+    role: 'Newcomer',
     async execute(message, args, client, command, _Discord) {
         if (!args[0]) {
             message.channel.send('Please enter a task ID');

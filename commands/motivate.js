@@ -5,7 +5,7 @@ module.exports = {
     aliases: ['mv'],
     cooldown: 3,
     description: 'Show a motivation image.',
-    xp:100,
+    role: 'Newcomer',
     async execute(message, args, client, command, _Discord) {
         RedditImageFetcher.fetch({
             type: "custom",
