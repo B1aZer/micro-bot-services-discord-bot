@@ -4,7 +4,7 @@ module.exports = {
     name: 'read',
     aliases: ['rd'],
     description: 'Read task description.',
-    role: 'Newcomer',
+    role: 'Dummy',
     async execute(message, args, client, command, _Discord) {
         if (!args[0]) {
             message.channel.send('Please enter a task ID');
