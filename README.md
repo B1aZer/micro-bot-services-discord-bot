@@ -12,20 +12,22 @@ Move notes from private.md
 
 - [x] All channels hidden by default
 - [ ] Read only channels
+- [ ] Bot content intent https://support-dev.discord.com/hc/en-us/articles/4404772028055
 
 #### Files
 
 - [ ] permissions.js serverId move to .env
 - [ ] messageCreate.js mpve prefix to .env
 - [ ] help js admin
-- [ ] answer 6 horss
+- [ ] answer 6 horus delay
 
 #### Goals
 
 - [x] answer
-- [ ] xp system
+- [x] xp system
 - [ ] leaderboard
-- [ ] profile xp
+- [ ] profile xp image ?
+- [ ] discord NFT as embed
 
 #### Resources
 
