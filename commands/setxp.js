@@ -1,9 +1,9 @@
 const xp = require("../utils/xp");
 
 module.exports = {
-    name: 'givexp',
-    aliases: ['give'],
-    description: 'Give an XP to the user',
+    name: 'setxp',
+    aliases: ['set'],
+    description: 'Set an XP for the user',
     role: 'Tester',
     async execute(message, args, client, command, _Discord) {
         if (!args[0]) {
@@ -14,7 +14,7 @@ module.exports = {
             message.channel.send('Please provide a user ID');
             return;
         }
-        await xp.give(message, args, client, _Discord);
+        await xp.set(message, args, client, _Discord);
         return true;
     }
 }

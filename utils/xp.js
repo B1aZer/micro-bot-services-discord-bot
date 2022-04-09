@@ -11,7 +11,17 @@ module.exports = {
         }
         return true;
     },
-    set: () => {
-
+    set: async (message, args, client, _Discord, _profileData) => {
+        let amount = parseInt(args[0], 10);
+        let profileData = _profileData || await profiles.get(message, args[1], client);
+        try {
+            await profileData.updateOne({$set: {xp: amount}})
+        } catch (err) {
+            console.log(err);
+        }
+        return true;
+    },
+    show: (message, args, client, _Discord, _profileData) => {
+        return _profileData.xp;
     }
 }

@@ -14,7 +14,6 @@ module.exports = {
           // XP CHECK
           if (roles.check(message, args, client, command, _Discord, profileData)) {
             message.reply(`**${command.name}** \nAliases: ${command.aliases} \n${command.description}`);
-            message.delete();
           }
         }
     }
