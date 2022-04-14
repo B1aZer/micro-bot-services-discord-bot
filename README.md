@@ -2,6 +2,68 @@
 
 Move notes from private.md
 
+#### Main
+
+- [ ] Colldown for command argument
+- [ ] add categories
+
+#### Leveling
+
+- [ ] Marketing
+- [ ] Community building
+- [ ] Art
+- [ ] Dev
+- [ ] Booster
+- [ ] Whitepaper
+
+#### Donation
+
+- [ ] Donation gives you XP
+- [ ] Donate n eth -> receive n xp
+- [ ] Donoh role
+
+#### XP
+
+- is a local currency. No way in code it should check level xp, only highest roles. Except assign
+- only solving tasks in current category gives roles. OR. highest categories have higher bounty.
+- category roles by solving a lot of tasks inside category
+
+#### Commands
+
+- [ ] Motivation
+- [ ] Funny
+- [ ] Creepy
+- [ ] Art/Photo
+- [ ] Games
+- [ ] Memes
+- [ ] Culture
+- [ ] VR
+- [ ] https://www.reddit.com/r/generative/ and p5js
+
+###### System
+
+- [ ] modmail
+- [ ] nominate/givexp
+
+#### Tasks
+
+###### Marketing
+
+- [ ] Twitter x 10 x 24h?
+- [ ] Medium
+- [ ] Tiktok
+- [ ] Reddit
+- [ ] YouTube
+
+###### Dev
+
+- ?
+
+###### Art
+
+- Memes
+- SVG
+
 #### Questions
 
 - [ ] Why do we need need await profiles?
