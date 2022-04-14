@@ -7,12 +7,13 @@ const prefix = '!';
 
 module.exports = async (Discord, client, message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
+  if (message.content === prefix) return message.channel.send('Not a valid command.');
   const args = message.content.slice(prefix.length).split(/ +/);
   const cmd = args.shift().toLowerCase();
   // ALIASES
   const command = client.commands.get(cmd) || client.commands.find(a => a.aliases && a.aliases.includes(cmd));
   // NO COMMAND FOUND
-  if (!command) return;
+  if (!command) return message.channel.send('Not a valid command.');
   // PROFILE
   // TODO: await, do we need it?
   let profileData = await profiles.get(message, args, client, command, Discord);
