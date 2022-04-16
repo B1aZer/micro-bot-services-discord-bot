@@ -2,7 +2,7 @@
 
 Move notes from private.md
 
-#### Taks
+#### Tasks
 
 - [ ] have the same structure as commands
 - [ ] description is a embed
@@ -12,6 +12,26 @@ Move notes from private.md
 
 - [ ] place to spend xp points
 - [ ] 40 pages 20/20?
+- [ ] Whitepapaer role gove access to mint
+- [ ] sell(list), buy, send, showoff
+- [ ] 2 of 4 commands give password to encryption
+- [ ] user have to guess how to decrypt with phrase
+
+#### Whitepaper
+
+- [ ] Mint 50k
+- [ ] sell,buy,show,send each 5k
+- [ ] hint 1
+- [ ] hint 2
+- [ ] hint 3
+
+#### Cypher
+
+- [ ] Uncommon cipher
+- [ ] enigma online?
+- [ ] uncommon text encryption
+- [ ] https://crypto.stackexchange.com/questions/41529/implementing-symmetric-encryption-algorithms-with-whole-words
+- [ ] http://rumkin.com/tools/cipher/
 
 #### 1 month - 14 may deadline
 
@@ -41,6 +61,43 @@ Move notes from private.md
 - [x] add categories
 
 #### Leveling
+
+###### Tasks
+
+General timout for tier 1 tasks - 6h.
+This makes tier 4-5 tasks optional.
+Tier 4-5 tasks aimed at project success.
+
+###### Marketing
+
+- [ ] tweet
+- [ ] reddit
+- [ ] tweet with mention
+- [4] original image
+- [5] marketing video
+
+###### Community
+
+- [1] Use one of the ! commands
+- [3] Help other
+- [5] Teem up
+
+###### Art
+
+- [ ] liked work
+- [ ] your work
+- [4] logo work
+- [5] nft idea
+
+###### Code
+
+- [ ] Solve simple task
+- [ ] Sole HR task, submission channel
+- [3] node task
+- [4] solidity task
+- [5] Create NFT??
+
+###### Roles/Channels
 
 - [ ] Marketing
 - [ ] Community building
