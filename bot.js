@@ -1,4 +1,6 @@
 require('dotenv').config();
+// prefetch
+//require('./commands/bundle/main');
 var path = require('path');
 const mongoose = require('mongoose');
 const Discord = require("discord.js")
