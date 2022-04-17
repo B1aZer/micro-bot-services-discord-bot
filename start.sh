@@ -1,1 +1,1 @@
-npx nodemon bot.js
+npx nodemon bot.js | ts
