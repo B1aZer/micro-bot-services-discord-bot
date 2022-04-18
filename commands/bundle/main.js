@@ -1,9 +1,0 @@
-module.exports.answer = require("../answer.js");
-module.exports.available = require("../available.js");
-module.exports.create = require("../create.js");
-module.exports.getxp = require("../getxp.js");
-module.exports.givexp = require("../givexp.js");
-module.exports.motivate = require("../motivate.js");
-module.exports.read = require("../read.js");
-module.exports.setxp = require("../setxp.js");
-module.exports.test = require("../test.js");
