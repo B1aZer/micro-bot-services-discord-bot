@@ -4,10 +4,11 @@ Move notes from private.md
 
 #### Tasks
 
-- [ ] have the same structure as commands
+- [x] have the same structure as commands
 - [ ] description is a embed
-- [ ] separate script to bundle tasks into JSON db
+- [-] separate script to bundle tasks into JSON db
 - [ ] remove rollup eb2d9cf7c21be76bc44672ffa80bf6188f1e9985
+- [ ] check commands async ex
 
 #### Shop
 
