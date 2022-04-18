@@ -1,9 +1,7 @@
 require('dotenv').config();
-// prefetch
-//require('./commands/bundle/main');
 var path = require('path');
 const mongoose = require('mongoose');
-const Discord = require("discord.js")
+const Discord = require("discord.js");
 
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"], partials: ["CHANNEL"] })
 
@@ -17,7 +15,8 @@ client.events = new Discord.Collection();
 mongoose
   .connect(process.env.MONGOOSE_SERVER)
   .then(() => {
-    console.log("connected to db")
+    console.log("connected to db");
+    client.login(process.env.TOKEN);
   });
 
-client.login(process.env.TOKEN)
+

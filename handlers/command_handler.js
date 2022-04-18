@@ -1,11 +1,11 @@
 const fs = require('fs');
 
 module.exports = (client, Discord) => {
-  command_files = fs.readdirSync('./commands').filter(file => file.endsWith('js'));
-
+  const command_files = fs.readdirSync('./commands').filter(file => file.endsWith('js'));
   for(const file of command_files) {
     const command = require(`../commands/${file}`);
     if (command.name) {
+      console.log(`${command.name} set command`);
       client.commands.set(command.name, command);
     } else {
       continue;
