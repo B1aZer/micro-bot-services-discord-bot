@@ -16,5 +16,8 @@ module.exports = {
             console.log(err);
         }
         return profileData;
+    },
+    getById: async (userID) => {
+        return await profileModel.findOne({userID: userID, guildID: '958742337394208808'});
     }
 }
