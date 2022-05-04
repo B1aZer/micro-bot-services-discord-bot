@@ -1,31 +1,19 @@
 //const profileModel = require('../models/profile');
+const axios = require('axios');
 
 module.exports = {
-    get: async (message, userID, client) => {
-        return {
-
-                userID: 32131231,
-                guildID: 31232131,
-                xp: 10000,
-        };
-        /*
-        let profileData;
+    get: (message, userID, client) => {
+        return module.exports.getById(message.author.id);
+    },
+    getById: async (userID) => {
+        let response = {};
         try {
-            profileData = await profileModel.findOne({userID: message.author.id, guildID: message.guild.id})
-            if (!profileData) {
-                profileData = await profileModel.create({
-                    userID: message.author.id,
-                    guildID: message.guild.id,
-                    xp: 0,
-                })
-            }
+            response = await axios.put('http://localhost:3011/profile', {
+                userID: userID,
+            })
         } catch (err) {
             console.log(err);
         }
-        return profileData;
-        */
-    },
-    getById: async (userID) => {
-        //return await profileModel.findOne({userID: userID, guildID: '958742337394208808'});
+        return response.data;
     }
 }

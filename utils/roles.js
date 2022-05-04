@@ -44,12 +44,6 @@ let rolesArray = [
 ]
 
 module.exports = {
-    pre: async (message, args, client, command, _Discord, profileData) => {
-        //if (profileData.xp < 100) {
-            //await xp.give(message, [100], client, _Discord, profileData);
-            //message.channel.send('Congrats!');
-        //}
-    },
     assign: (message, args, client, command, _Discord, profileData) => {       
         let roleName = module.exports.meetsRole(profileData.xp);
         config.log && console.log(`Trying to assign ${profileData.userID} user ${roleName} role based on ${profileData.xp} xp`);

@@ -15,19 +15,16 @@ module.exports = async (Discord, client, message) => {
   // NO COMMAND FOUND
   if (!command) return message.channel.send('Not a valid command.');
   // PROFILE
-  // TODO: await, do we need it?
   let profileData = await profiles.get(message, args, client, command, Discord);
   if (!profileData) return;
   // PERMISSIONS
   // TODO: not used, remove
-  if (!permissions.check(message, args, client, command, Discord)) return;
+  // if (!permissions.check(message, args, client, command, Discord)) return;
   // COMMAND XP VISIBLITY CHECK
   if (!roles.check(message, args, client, command, Discord, profileData)) return;
   // COOLDOWNS
   if (!cooldowns.set(message, args, client, command, Discord)) return;
   try {
-    // ROLES AND LEVELING SYSTEM
-    roles.pre(message, args, client, command, Discord, profileData)
     // EXECUTE
     command.execute(message, args, client, command, Discord, profileData)
     // ROLES AND LEVELING SYSTEM
