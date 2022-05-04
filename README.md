@@ -2,6 +2,17 @@
 
 Move notes from private.md
 
+## End of May Launch
+
+- [ ] Landing cave of secrets pass / pay
+- [ ] reddit service
+- [ ] Screener tasks. Like list your favourite nfts. What non-released project you think will make it.
+- [ ] TRUSTable Marketing letter
+- [ ] Voting command for nfts
+- [ ] ERC20 token
+- [ ] Boost Xp
+- [ ] Withdraw xp-> token?
+
 ## Ideas
 
 - [ ] Discord is a new web
@@ -81,9 +92,9 @@ Move notes from private.md
 #### 1 month - 14 may deadline
 
 - [x] Easy to write tasks connected to flexible answers.
-- [ ] XP systems with horizontal and vertical leveling. Vertical measured by xp, Horizontal by ranks (number of tasks).
+- [x] XP systems with horizontal and vertical leveling. Vertical measured by xp, Horizontal by ranks (number of tasks).
 - [ ] 5 categories tasks: Market, Comm, Art, Code, Boost. 1month span
-- [ ] Boost implementation.
+- [x] Boost implementation.
 
 #### NEXT
 
@@ -239,9 +250,15 @@ Tier 4-5 tasks aimed at project success.
 - [ ] profile xp image ?
 - [ ] discord NFT as embed
 
+#### Sisters
+
+- https://thedefiant.io/amm-nfts/
+
 #### Resources
 
 - [ ] Global search bot - https://github.com/discord/discord-api-docs/issues/663
+- [ ] hn hiring - https://news.ycombinator.com/item?id=31235968
+- [ ] cheap service and phones - https://www.reddit.com/r/NoContract/comments/rhtnbk/my_cell_service_advice_tree_cheapest_rate_plan/
 - [ ] Dev portal https://discord.com/developers/applications/959176510118453301/oauth2/url-generator
 - [ ] Badges - https://tibi4.com/discord-role-icons/
 - [ ] NFT Discord Bot https://github.com/lucid-eleven/nft-discord-bot
