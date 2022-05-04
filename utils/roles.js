@@ -52,10 +52,10 @@ module.exports = {
     },
     assign: (message, args, client, command, _Discord, profileData) => {       
         let roleName = module.exports.meetsRole(profileData.xp);
-        config.log && console.log(`Trying to ${profileData.userID} user ${roleName} role based on ${profileData.xp} xp`);
+        config.log && console.log(`Trying to assign ${profileData.userID} user ${roleName} role based on ${profileData.xp} xp`);
         let role = message.member.guild.roles.cache.find(role => role.name === roleName);
         if (!message.member.roles.cache.some(role => role.name === roleName)) {
-            config.log && console.log(`Assign role`);
+            config.log && console.log(`Assigning role`);
             message.member.roles.add(role);
         }
         return true;
