@@ -4,16 +4,19 @@ Move notes from private.md
 
 ## Now
 
-- [ ] Finish etherscan scraper, write file, schedule 1h
-- [ ] Scrap upcoming, with tw,disc count, schedule 1 day
-- [ ] Opensea monitor
-- [ ] Finish twitter, schedule
+- [x] Finish etherscan scraper, write file, schedule 1h
+- [x] Scrap upcoming, with tw,disc count, schedule 1 day
+- [x] Finish twitter, schedule
+- [ ] Opensea monitor for new listings (floor price), new collection listings (9)daily)
 - [ ] Finish landing, back req, disable invites
 - [ ] Commands for each bot
 - [ ] Finish payment
 - [ ] Screener
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
+- [ ] praw,scraper have secrets in code, search secret, move dotenv
+- [ ] coins
+- [ ] commands timeout and max number of us
 
 ## End of May Launch
 
@@ -266,6 +269,17 @@ Tier 4-5 tasks aimed at project success.
 #### Sisters
 
 - https://thedefiant.io/amm-nfts/
+
+
+#### Discord Accs
+
+347653
+blaze.imba
+kwerkee12
+dmitry.branitskiy1@gmail.com - disabled
+dmitrii.branitskii2
+dmitrii.branitskii3
+dmitrii.branitskii4
 
 #### Resources
 
