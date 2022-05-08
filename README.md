@@ -2,6 +2,19 @@
 
 Move notes from private.md
 
+## Now
+
+- [ ] Finish etherscan scraper, write file, schedule 1h
+- [ ] Scrap upcoming, with tw,disc count, schedule 1 day
+- [ ] Opensea monitor
+- [ ] Finish twitter, schedule
+- [ ] Finish landing, back req, disable invites
+- [ ] Commands for each bot
+- [ ] Finish payment
+- [ ] Screener
+- [ ] Test to team + jonny
+- [ ] Market, market paper, give pass, possibly give coins as part of promotion
+
 ## End of May Launch
 
 - [ ] Landing cave of secrets pass / pay
@@ -256,6 +269,7 @@ Tier 4-5 tasks aimed at project success.
 
 #### Resources
 
+- [ ] Pupeteer OS Scraper - https://github.com/dcts/opensea-scraper/blob/main/src/functions/offers.js
 - [ ] Global search bot - https://github.com/discord/discord-api-docs/issues/663
 - [ ] hn hiring - https://news.ycombinator.com/item?id=31235968
 - [ ] cheap service and phones - https://www.reddit.com/r/NoContract/comments/rhtnbk/my_cell_service_advice_tree_cheapest_rate_plan/
