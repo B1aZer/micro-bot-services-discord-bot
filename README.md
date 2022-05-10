@@ -7,7 +7,10 @@ Move notes from private.md
 - [x] Finish etherscan scraper, write file, schedule 1h
 - [x] Scrap upcoming, with tw,disc count, schedule 1 day
 - [x] Finish twitter, schedule
-- [ ] Opensea monitor for new listings (floor price), new collection listings (9)daily)
+- [x] Opensea monitor for new listings (floor price), new collection listings (9)daily)
+- [ ] Cron for some reason sends message on second try
+- [ ] add links to embeds
+- [ ] fix python twitter
 - [ ] Finish landing, back req, disable invites
 - [ ] Commands for each bot
 - [ ] Finish payment
@@ -17,6 +20,17 @@ Move notes from private.md
 - [ ] praw,scraper have secrets in code, search secret, move dotenv
 - [ ] coins
 - [ ] commands timeout and max number of us
+
+## Marketing
+
+- [ ] Give password to discord with tools. So we are wanting to launh unique defi project, see WP, if you agree give us info and we give you oass to closed discord.
+- [ ] Push WP to server and protect with pass
+- [ ] 1. What project is about?
+- [ ] 2. What discord is about?
+- [ ] 3. What we are looking for? We are looking for projects..
+- [ ] 4. Who supports us?
+- [ ] PS. Kindly note that all information I share with you is private and not inteded for public disclosure. Thank you.
+- [ ] 5. Please let me know if you will be willing to participate. I will send pass and sample of announcement other project used for us. You can use it and come up with your own.
 
 ## End of May Launch
 
