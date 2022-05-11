@@ -9,17 +9,27 @@ Move notes from private.md
 - [x] Finish twitter, schedule
 - [x] Opensea monitor for new listings (floor price), new collection listings (9)daily)
 - [ ] Cron for some reason sends message on second try
-- [ ] add links to embeds
-- [ ] fix python twitter
+- [ ] remove <> from scripts, add in bot presentation
+- [x] add links to embeds
+- [x] fix python twitter
 - [ ] Finish landing, back req, disable invites
-- [ ] Commands for each bot
-- [ ] Finish payment
-- [ ] Screener
+- [ ] Roles, Screener. Enter ! gives 100 coins. There are 5 roles, each role gives 1 free and 1 paid command. By getting 5 roles recieve 100 more coins.
+- [ ] Finish payment, coins
+- [x] Commands for each bot
+- [ ] 5 bot commands and 5 images (motivate, memes, pepe, culture, random nft)
+- [ ] 5 roles (crypto dumbass, crypto nomad, crypto junkie, cryptographer)
+- [ ] 5 commands (upcoming, recent, minting, twitter, whitelist)
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
-- [ ] praw,scraper have secrets in code, search secret, move dotenv
-- [ ] coins
 - [ ] commands timeout and max number of us
+- [ ] praw,scraper have secrets in code, search secret, move dotenv
+
+## Bots
+
+- [ ] https://www.niftyriver.io/analytics/whitelists
+- [ ] https://nftgo.io/whale-tracking/mint
+- [ ] https://www.nftscan.com/analytics/discover
+- [ ] random nft https://nfty.dev/
 
 ## Marketing
 

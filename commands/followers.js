@@ -27,7 +27,7 @@ module.exports = {
             .setTimestamp()
         for (let i = 0; i < top25.length; i++) {
             const elements = top25[i].split('|');
-            embed.addField(elements[0], `Followers: ${elements[2]}\r\nCreated: ${elements[1].trim()}\r\nhttps://twitter.com/${elements[0]}`)
+            embed.addField(elements[0], `Followers: ${elements[2]}\r\nCreated: ${new Date(elements[1].trim())}\r\nhttps://twitter.com/${elements[0]}`)
         }
         message.channel.send({ embeds: [embed] })
         //message.channel.send(table.toString());
