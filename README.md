@@ -22,6 +22,7 @@ Move notes from private.md
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
 - [ ] commands timeout and max number of us
+- [ ] randomize whitelists
 - [ ] praw,scraper have secrets in code, search secret, move dotenv
 
 ## Bots
