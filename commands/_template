@@ -1,0 +1,27 @@
+module.exports = {
+    // serves as id, as there can't be 2 identical files with same name
+    name: 'trending',
+    // 2 letters
+    aliases: ['tr'],
+    // useful for tasks
+    category: 'nft',
+    // self evident
+    description: 'Shows top25 trending NFT twitter accounts for the past 24 hours.',
+    // only users of this role and higher will be able to see the command
+    role: 'Dummy',
+    // amount xp granted
+    xp: 12,
+    // how to use
+    usage: 'tr 1',
+    // list all arguments in order
+    arguments: [{
+        'one': 'what does',
+    }],
+    // in seconds between commands of each user
+    cooldown: 5,
+    // max number of times user can call command
+    limit: 10,
+    // do work
+    execute(message, args, client, command, _Discord, profileData) {
+    }
+}

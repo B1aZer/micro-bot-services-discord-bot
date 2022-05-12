@@ -29,9 +29,10 @@ client.on('ready', client => {
 
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
-client.tasks = new Discord.Collection();
+//client.tasks = new Discord.Collection();
 
-['command_handler', 'event_handler', 'task_handler'].forEach(handler => {
+// TODO: task handler, make tasks commands?
+['command_handler', 'event_handler'].forEach(handler => {
   require(`./handlers/${handler}`)(client, Discord);
 });
 

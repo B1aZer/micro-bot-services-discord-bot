@@ -16,7 +16,7 @@ Move notes from private.md
 - [ ] Roles, Screener. Enter ! gives 100 coins. There are 5 roles, each role gives 1 free and 1 paid command. By getting 5 roles recieve 100 more coins.
 - [ ] Finish payment, coins
 - [x] Commands for each bot
-- [ ] 5 bot commands and 5 images (motivate, memes, pepe, culture, random nft)
+- [ ] 5 bot commands and 5 images (motivate, memes, pepe, culture, random nft (https://docs.opensea.io/reference/retrieving-orders))
 - [ ] 5 roles (crypto dumbass, crypto nomad, crypto junkie, cryptographer)
 - [ ] 5 commands (upcoming, recent, minting, twitter, whitelist)
 - [ ] Test to team + jonny
