@@ -3,7 +3,7 @@ const fs = require("fs");
 module.exports = {
     name: 'minting',
     aliases: ['mt'],
-    category: 'nft',
+    category: 'coins',
     description: 'Shows top 10 most minterd NFT projects for the last 10 minutes.',
     role: 'Dummy',
     execute(message, args, client, command, _Discord, profileData) {

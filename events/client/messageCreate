@@ -31,6 +31,7 @@ module.exports = async (Discord, client, message) => {
   if (!cooldowns.set(message, args, client, command, Discord)) return;
   try {
     // EXECUTE
+    // TODO: probably need await here, check
     command.execute(message, args, client, command, Discord, profileData)
     // ROLES AND LEVELING SYSTEM
     // TODO: do we need check on each message?

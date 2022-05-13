@@ -13,12 +13,15 @@ Move notes from private.md
 - [x] add links to embeds
 - [x] fix python twitter
 - [ ] Finish landing, back req, disable invites
-- [ ] Roles, Screener. Enter ! gives 100 coins. There are 5 roles, each role gives 1 free and 1 paid command. By getting 5 roles recieve 100 more coins.
+- [ ] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
+- [ ] paid commands always visible in !help
+- [ ] Check permissions for channels
 - [ ] Finish payment, coins
 - [x] Commands for each bot
 - [ ] 5 bot commands and 5 images (motivate, memes, pepe, culture, random nft (https://docs.opensea.io/reference/retrieving-orders))
-- [ ] 5 roles (crypto dumbass, crypto nomad, crypto junkie, cryptographer)
+- [ ] 5 roles (crypto dumbass, crypto nomad, crypto lost mmoney, crypto junkie, cryptographer)
 - [ ] 5 commands (upcoming, recent, minting, twitter, whitelist)
+- [ ] add tasks, task are commands in different dir
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
 - [ ] commands timeout and max number of us
