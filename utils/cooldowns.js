@@ -3,13 +3,12 @@ const cooldowns = new Map();
 
 module.exports = {
     set: (interaction, command) => {
-        console.log(command);
-        if (!cooldowns.has(command.name)) {
-            cooldowns.set(command.name, new Discord.Collection());
+        if (!cooldowns.has(command.data.name)) {
+            cooldowns.set(command.data.name, new Discord.Collection());
         }
 
         const currentTime = Date.now();
-        const timestamps = cooldowns.get(command.name);
+        const timestamps = cooldowns.get(command.data.name);
         const cooldownAmount = (command.cooldown) * 1000;
 
         // If timestamps has a key with the author's id then check the expiration time to send a message to a user.
@@ -19,7 +18,7 @@ module.exports = {
             if (currentTime < expiration_time) {
                 const time_left = (expiration_time - currentTime) / 1000;
                 interaction.reply({
-                    content: `Please wait ${time_left.toFixed(1)} more seconds before using ${command.name}`,
+                    content: `Please wait ${time_left.toFixed(1)} more seconds before using ${command.data.name}`,
                     ephemeral: true
                 });
                 return;
