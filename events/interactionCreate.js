@@ -1,3 +1,5 @@
+const cooldowns = require("../utils/cooldowns")
+
 module.exports = {
 	name: 'interactionCreate',
 	async execute(interaction) {
@@ -5,7 +7,8 @@ module.exports = {
 
 		const command = interaction.client.commands.get(interaction.commandName);
 		if (!command) return;
-
+		// COOLDOWNS
+		if (!cooldowns.set(interaction, command)) return;
 		try {
 			await command.execute(interaction);
 		} catch (error) {
