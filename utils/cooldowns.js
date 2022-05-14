@@ -2,7 +2,9 @@ const Discord = require("discord.js");
 const cooldowns = new Map();
 
 module.exports = {
+    // @returns {boolean} has / no cooldown set
     set: (interaction, command) => {
+        if (!command.cooldown) return true;
         if (!cooldowns.has(command.data.name)) {
             cooldowns.set(command.data.name, new Discord.Collection());
         }

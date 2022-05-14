@@ -14,8 +14,8 @@ module.exports = {
 				.setName('reddit')
 				.setDescription('Info about the server'))
 	,
-	category: 'general',
-	cooldown: 5,
+	category: 'general', // move to prefix (lv1) / subcommands?
+	cooldown: 5, // does not make sense for community commands
 	async execute(interaction) {
 		await interaction.deferReply({ ephemeral: true });
 		await interaction.editReply('List');
