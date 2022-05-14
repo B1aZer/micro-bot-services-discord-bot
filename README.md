@@ -2,6 +2,12 @@
 
 Move notes from private.md
 
+## Goal
+
+- [ ] Crypto (nft/defi) cooking (investing) group with bots
+- [ ] Test launch 20 May
+- [ ] Launch 30 May
+
 ## Now
 
 - [x] Finish etherscan scraper, write file, schedule 1h
@@ -26,6 +32,9 @@ Move notes from private.md
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
 - [ ] commands timeout and max number of us
 - [ ] randomize whitelists
+- [ ] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
+- [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
+- [ ] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
 - [ ] praw,scraper have secrets in code, search secret, move dotenv
 
 ## Bots
@@ -137,7 +146,7 @@ Move notes from private.md
 
 - [x] Easy to write tasks connected to flexible answers.
 - [x] XP systems with horizontal and vertical leveling. Vertical measured by xp, Horizontal by ranks (number of tasks).
-- [ ] 5 categories tasks: Market, Comm, Art, Code, Boost. 1month span
+- [x] 5 categories tasks: Market, Comm, Art, Code, Boost. 1month span
 - [x] Boost implementation.
 
 #### NEXT

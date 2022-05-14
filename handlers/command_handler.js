@@ -5,7 +5,10 @@ const { Routes } = require('discord-api-types/v9');
 
 module.exports = (client) => {
 	const commands = []
-	const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+	const generalCommandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+	const taskCommandFiles = fs.readdirSync('./commands/tasks').filter(file => file.endsWith('.js'))
+		.map(el => `tasks/${el}`);
+	const commandFiles = [...generalCommandFiles, ...taskCommandFiles]
 	for (const file of commandFiles) {
 		const command = require(`../commands/${file}`);
 		client.commands.set(command.data.name, command);
