@@ -18,7 +18,7 @@ module.exports = (client) => {
                 .setImage(data.image)
                 .addField(data.collection, `ETH price: ${data.eth_price}\r\nFloor price: ${data.floor_price}\r\nUSD price: ${data.usd_price}\r\n${data.permalink}`)
                 .setTimestamp()
-            client.channels.cache.get(process.env.OPENSEA_MONITOR_ID).send({ embeds: [embed] });
+            client.channels.cache.get(process.env.OPENSEA_MONITOR_CHANNEL_ID).send({ embeds: [embed] });
         }
     });
     client.on('ready', client => {

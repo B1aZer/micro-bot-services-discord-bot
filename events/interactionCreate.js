@@ -7,7 +7,9 @@ module.exports = {
 
 		const command = interaction.client.commands.get(interaction.commandName);
 		if (!command) return;
+		// TODO: subcommand? = console.log(command.options.getSubcommand());
 		// COOLDOWNS
+		// TODO: shares cooldown for a group of subcommands
 		if (!cooldowns.set(interaction, command)) return;
 		try {
 			await command.execute(interaction);

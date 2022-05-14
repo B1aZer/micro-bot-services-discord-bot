@@ -320,6 +320,9 @@ dmitrii.branitskii4
 
 #### Resources
 
+- [ ] mongodb Sam google account
+- [ ] [discord python add to server with api](https://dev.to/dandev95/add-a-user-to-a-guild-with-discord-oauth2-in-python-using-requests-595f)
+- [ ] jqery template Defining a HTML template to append using JQuery (https://stackoverflow.com/questions/18673860/defining-a-html-template-to-append-using-jquery)
 - [ ] Pupeteer OS Scraper - https://github.com/dcts/opensea-scraper/blob/main/src/functions/offers.js
 - [ ] Global search bot - https://github.com/discord/discord-api-docs/issues/663
 - [ ] hn hiring - https://news.ycombinator.com/item?id=31235968
