@@ -10,31 +10,39 @@ Move notes from private.md
 
 ## Now
 
+- [ ] max number of usages / lim
+- [ ] status command / user menu / lelevup UI
+- [ ] add role routine
+- [ ] random nft + cleanup reddit praw
+- [ ] add community commands
+- [ ] add coins, complete payment
+- [ ] add tasks
+- [ ] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
 - [x] Scrap upcoming, with tw,disc count, schedule 1 day
 - [x] Finish twitter, schedule
 - [x] Opensea monitor for new listings (floor price), new collection listings (9)daily)
-- [ ] Cron for some reason sends message on second try
-- [ ] remove <> from scripts, add in bot presentation
 - [x] add links to embeds
 - [x] fix python twitter
 - [ ] Finish landing, back req, disable invites
 - [ ] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
-- [ ] paid commands always visible in !help
+- [x] paid commands always visible in !help
 - [ ] Check permissions for channels
 - [ ] Finish payment, coins
 - [x] Commands for each bot
-- [ ] 5 bot commands and 5 images (motivate, memes, pepe, culture, random nft (https://docs.opensea.io/reference/retrieving-orders))
-- [ ] 5 roles (crypto dumbass, crypto nomad, crypto lost mmoney, crypto junkie, cryptographer)
-- [ ] 5 commands (upcoming, recent, minting, twitter, whitelist)
-- [ ] add tasks, task are commands in different dir
+- [-] 5 bot commands and 5 images (motivate, memes, pepe, culture, random nft (https://docs.opensea.io/reference/retrieving-orders))
+- [-] 5 roles (crypto dumbass, crypto nomad, crypto lost mmoney, crypto junkie, cryptographer)
+- [x] 5 commands (upcoming, recent, minting, twitter, whitelist)
+- [x] add tasks, task are commands in different dir
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
 - [ ] commands timeout and max number of us
-- [ ] randomize whitelists
-- [ ] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
+- [ ] randomize whitelists (in command)
+- [ ] Cron for some reason sends message on second try, remove ntf error to file
+- [ ] remove <> from scripts, add in bot presentation
+- [x] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
 - [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
-- [ ] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
+- [f] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
 - [ ] praw,scraper have secrets in code, search secret, move dotenv
 
 ## Bots
@@ -320,6 +328,7 @@ dmitrii.branitskii4
 
 #### Resources
 
+- [ ]effective nft launch (https://www.paradigm.xyz/2021/10/a-guide-to-designing-effective-nft-launches)
 - [ ] mongodb Sam google account
 - [ ] [discord python add to server with api](https://dev.to/dandev95/add-a-user-to-a-guild-with-discord-oauth2-in-python-using-requests-595f)
 - [ ] jqery template Defining a HTML template to append using JQuery (https://stackoverflow.com/questions/18673860/defining-a-html-template-to-append-using-jquery)
