@@ -33,8 +33,15 @@ module.exports = {
 
     ,
     async execute(interaction) {
+        const subcommand = interaction.options.getSubcommand()
         const answer = interaction.options.getString('answer');
-        switch (interaction.options.getSubcommand()) {
+        const user = (await axios.get(`${process.env.MONGODB_URL}/user`, {params: {userID: interaction.user.id}})).data
+        const hasAnswers = user?.tasks.some(task => task.id === lv1Task1Id)
+        if (hasAnswers) {
+            await interaction.reply('You already submited reply');
+            return;
+        }
+        switch (subcommand) {
             case lv1Task1Id.split('_')[1]:
                 // dumb reply
                 await interaction.deferReply({ ephemeral: true });
@@ -49,19 +56,19 @@ module.exports = {
                     .setAuthor({ name: 'GooDeeBot', iconURL: 'https://i.imgur.com/8nB0tI0.jpg' })
                     .setTimestamp()
                 if (!answer) {
+                    // show task description
                     interaction.editReply({ embeds: [embed] })
                     return;
                 };
                 // TODO: check twitter
                 // save to db
-                let rr = await axios.put(`${process.env.MONGODB_URL}/user`, {
+                axios.put(`${process.env.MONGODB_URL}/user`, {
                     userID: interaction.user.id,
                     tasks: [{
                         id: lv1Task1Id,
                         answer: answer
                     }]
                 })
-                console.log(rr.data);
                 // save to disk
                 loggerInfluencer.write(`${interaction.user.tag} | ${answer}\r\n`)
                 // save to channel
