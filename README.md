@@ -10,9 +10,9 @@ Move notes from private.md
 
 ## Now
 
-- [ ] max number of usages / lim
-- [ ] status command / user menu / lelevup UI
-- [ ] add role routine
+- [x] max number of usages / lim
+- [x] status command / user menu / lelevup UI
+- [ ] add role routine add on xp. how we count tasks there were not complete?
 - [ ] random nft + cleanup reddit praw
 - [ ] add community commands
 - [ ] add coins, complete payment
@@ -24,6 +24,7 @@ Move notes from private.md
 - [x] Opensea monitor for new listings (floor price), new collection listings (9)daily)
 - [x] add links to embeds
 - [x] fix python twitter
+- [ ] enter command
 - [ ] Finish landing, back req, disable invites
 - [ ] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
 - [x] paid commands always visible in !help
