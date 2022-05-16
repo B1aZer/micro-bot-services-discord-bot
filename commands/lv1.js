@@ -60,19 +60,19 @@ module.exports = {
         const subcommand = interaction.options.getSubcommand()
         switch (subcommand) {
             case lv1InfluencerTask.params.name:
-                lv1InfluencerTask.execute(interaction)
+                await lv1InfluencerTask.execute(interaction)
                 break;
             case lv1NftLookTask.params.name:
-                lv1NftLookTask.execute(interaction)
+                await lv1NftLookTask.execute(interaction)
                 break;
             case lv1NftBuyTask.params.name:
-                lv1NftBuyTask.execute(interaction)
+                await lv1NftBuyTask.execute(interaction)
                 break;
             case lv1NftDiscordTask.params.name:
-                lv1NftDiscordTask.execute(interaction)
+                await lv1NftDiscordTask.execute(interaction)
                 break;
             case lv1NftAwaitTask.params.name:
-                lv1NftAwaitTask.execute(interaction)
+                await lv1NftAwaitTask.execute(interaction)
                 break;
             default:
             // code block
