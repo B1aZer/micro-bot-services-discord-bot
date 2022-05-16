@@ -7,7 +7,7 @@ module.exports = {
 		.setName('rank')
 		.setType(ApplicationCommandType.User)
 	,
-	execute(interaction) {
-		rankCommand.execute(interaction)
+	async execute(interaction) {
+		await rankCommand.execute(interaction)
 	},
 };

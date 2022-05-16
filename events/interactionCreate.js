@@ -16,8 +16,12 @@ module.exports = {
 			await command.execute(interaction);
 			//await levelUp(interaction);
 		} catch (error) {
+			if (interaction.deferred) {
+				await interaction.editReply({ content: 'There was an error while executing this command!', ephemeral: true });
+			} else {
+				await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+			}
 			console.error(error);
-			await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 		}
 	},
 };
