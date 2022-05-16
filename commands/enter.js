@@ -17,7 +17,7 @@ module.exports = {
 			const allRoles = interaction.client.roles.sort((a,b) => a.rawPosition - b.rawPosition)
 			const firstRole = [...allRoles][1];
 			interaction.member.roles.add(firstRole);
-			await interaction.reply({content: ':tada: Congrats!', ephemeral: true });
+			await interaction.reply({content: 'Congrats! You are in :tada:\r\nType `/help` to proceed', ephemeral: true });
 		} else {
 			await interaction.reply({content: 'This is not the right password', ephemeral: true });
 		}	

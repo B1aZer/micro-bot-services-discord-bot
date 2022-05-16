@@ -13,9 +13,15 @@ Move notes from private.md
 - [x] screener, lvlup, 
 - [ ] test from everyone perspective up
 - [ ] fix motivate
-- [ ] coins
+- [ ] coins, db => 
+- [ ] refactor paid commands =>
+- [ ] require coins =>
+- [ ] payment UI and code, $10 - 100 coins, 10 each use, Range Inputs from 100 to 10000 =>
+- [ ] complete contact =>
+- [ ] make listener in bot, modify coins in db => 
 - [ ] complete payment
 - [ ] finish levelup
+- [ ] complete lv1
 - [x] restirc "info" channel to read only
 - [x] max number of usages / lim
 - [x] status command / user menu / lelevup UI
@@ -33,11 +39,11 @@ Move notes from private.md
 - [x] fix python twitter
 - [x] enter command
 - [ ] Finish landing. Alternate enter method
-- [ ] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
+- [-] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
 - [ ] check bots commands only ephemeral
 - [x] paid commands always visible in !help
-- [ ] Check permissions for channels
-- [ ] Finish payment, coins
+- [-] Check permissions for channels
+- [-] Finish payment, coins
 - [x] Commands for each bot
 - [-] 5 bot commands and 5 images (motivate, memes, pepe, culture, random nft (https://docs.opensea.io/reference/retrieving-orders))
 - [-] 5 roles (crypto dumbass, crypto nomad, crypto lost mmoney, crypto junkie, cryptographer)
@@ -45,7 +51,7 @@ Move notes from private.md
 - [x] add tasks, task are commands in different dir
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
-- [ ] commands timeout and max number of us
+- [x] commands timeout and max number of us
 - [ ] randomize whitelists (in command)
 - [ ] Cron for some reason sends message on second try, remove ntf error to file
 - [ ] remove <> from scripts, add in bot presentation
