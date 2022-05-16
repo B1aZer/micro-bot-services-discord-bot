@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 
 module.exports = {
     name: 'trending',
-    description: 'Shows top25 trending NFT twitter accounts for the past 24 hours.',
+    description: 'Shows trending NFT twitter accounts for the past 24 hours.',
     coins: 10,
     async execute(interaction) {
         await interaction.deferReply({ ephemeral: true })

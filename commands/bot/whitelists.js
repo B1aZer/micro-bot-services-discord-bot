@@ -5,7 +5,7 @@ const Discord = require("discord.js");
 module.exports = {
     name: 'whitelists',
     description: 'Shows upcoming prominent NFT collections.',
-    coins: 30,
+    coins: 10,
     async execute(interaction) {
         await interaction.deferReply({ ephemeral: true })
         const command_files = fs.readdirSync('./logs/upcoming-whitelists').reverse();
