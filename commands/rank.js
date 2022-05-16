@@ -11,7 +11,7 @@ module.exports = {
 		.addSubcommand(subcommand =>
 			subcommand
 				.setName('user')
-				.setDescription('User tag name')
+				.setDescription('Shows user rank.')
 				.addUserOption(option => option.setName('target').setDescription('The user')))
 	,
 	async execute(interaction) {
@@ -21,19 +21,19 @@ module.exports = {
 			|| interaction.options.getUser('user')
 			|| interaction.user
 		const member = await interaction.guild.members.fetch(user.id)
-		const highestRole = member.roles.cache.sort((a,b) => b.rawPosition - a.rawPosition).first()
+		const highestRole = member.roles.cache.sort((a, b) => b.rawPosition - a.rawPosition).first()
 		const embed = new Discord.MessageEmbed()
-		.setColor("#00936f")
-		.setTitle(user.username)
-		.setThumbnail(user.displayAvatarURL())
-		.setDescription(`
+			.setColor("#00936f")
+			.setTitle(user.username)
+			.setThumbnail(user.displayAvatarURL())
+			.setDescription(`
 			${bold('Level')}: ${highestRole.rawPosition}
 			${bold('Role')}: ${highestRole.name}
 			${bold('Commands')}: 5
 			${bold('Coins')}: 100
 		`)
-		.setTimestamp()
-		.setFooter({ text: interaction.guild.name })
-		await interaction.editReply({embeds: [embed]});
+			.setTimestamp()
+			.setFooter({ text: interaction.guild.name })
+		await interaction.editReply({ embeds: [embed] });
 	},
 };
