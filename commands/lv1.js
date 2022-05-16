@@ -1,14 +1,14 @@
 const { SlashCommandBuilder } = require('@discordjs/builders')
 const defaultCommandDescription = 'Run command without params to see the task description.'
-const lv1InfluencerTask = require('./lv1/influencer')
-const taskBase = require('./base/taskBase')
-const lv1NftLookData = require('./data/lv1.json')[1];
+const lv1InfluencerTask = require('./tasks/lv1/influencer')
+const taskBase = require('./tasks/base/taskBase')
+const lv1NftLookData = require('./tasks/data/lv1.json')[1];
 const lv1NftLookTask = new taskBase(lv1NftLookData)
-const lv1NftBuyData = require('./data/lv1.json')[2];
+const lv1NftBuyData = require('./tasks/data/lv1.json')[2];
 const lv1NftBuyTask = new taskBase(lv1NftBuyData)
-const lv1NftDiscordData = require('./data/lv1.json')[3];
+const lv1NftDiscordData = require('./tasks/data/lv1.json')[3];
 const lv1NftDiscordTask = new taskBase(lv1NftDiscordData)
-const lv1NftAwaitData = require('./data/lv1.json')[4];
+const lv1NftAwaitData = require('./tasks/data/lv1.json')[4];
 const lv1NftAwaitTask = new taskBase(lv1NftAwaitData)
 
 module.exports = {
