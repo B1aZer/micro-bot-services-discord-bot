@@ -12,6 +12,7 @@ Move notes from private.md
 
 - [x] screener, lvlup, 
 - [ ] test from everyone perspective up
+- [ ] replace | with |||, remove unicode?
 - [ ] fix motivate
 - [ ] coins, db => 
 - [ ] refactor paid commands =>
@@ -39,6 +40,7 @@ Move notes from private.md
 - [x] add links to embeds
 - [x] fix python twitter
 - [x] enter command
+- [ ] setColor to dotenv
 - [ ] Finish landing. Alternate enter method
 - [-] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
 - [ ] check bots commands only ephemeral
