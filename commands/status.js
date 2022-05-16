@@ -21,7 +21,7 @@ module.exports = {
 			|| interaction.options.getUser('user')
 			|| interaction.user
 		const member = await interaction.guild.members.fetch(user.id)
-		const highestRole = member.roles.cache.sort(e => e.rawPosition).first()
+		const highestRole = member.roles.cache.sort((a,b) => b.rawPosition - a.rawPosition).first()
 		const embed = new Discord.MessageEmbed()
 		.setColor("#00936f")
 		.setTitle(user.username)
