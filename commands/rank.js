@@ -6,8 +6,8 @@ const axios = require('axios');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('status')
-		.setDescription('Shows user status.')
+		.setName('rank')
+		.setDescription('Shows user rank.')
 		.addSubcommand(subcommand =>
 			subcommand
 				.setName('user')

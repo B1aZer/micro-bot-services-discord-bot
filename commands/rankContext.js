@@ -1,13 +1,13 @@
 const { ContextMenuCommandBuilder } = require('@discordjs/builders');
 const {ApplicationCommandType} = require('discord-api-types/v9');
-const statusCommand = require('./status');
+const rankCommand = require('./rank');
 
 module.exports = {
 	data: new ContextMenuCommandBuilder()
-		.setName('Status')
+		.setName('rank')
 		.setType(ApplicationCommandType.User)
 	,
 	execute(interaction) {
-		statusCommand.execute(interaction)
+		rankCommand.execute(interaction)
 	},
 };

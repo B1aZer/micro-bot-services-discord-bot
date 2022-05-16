@@ -17,7 +17,8 @@ Move notes from private.md
 - [ ] refactor paid commands =>
 - [ ] require coins =>
 - [ ] payment UI and code, $10 - 100 coins, 10 each use, Range Inputs from 100 to 10000 =>
-- [ ] complete contact =>
+- [ ] complete contract =>
+- [ ] upload to dev =>
 - [ ] make listener in bot, modify coins in db => 
 - [ ] complete payment
 - [ ] finish levelup

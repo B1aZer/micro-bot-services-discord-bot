@@ -8,6 +8,6 @@ module.exports = {
 		.setDescription('Shows help.')
 	,
 	async execute(interaction) {
-		await interaction.reply({ content: 'Solve tasks. Gain ranks.\r\n\r\nUse `/status` for rank status\r\nUse `/lv` to list tasks for a particular level\r\nUse coins to access `/bot` commands', ephemeral: true });
+		await interaction.reply({ content: 'Solve tasks. Gain ranks.\r\n\r\nUse `/rank` for rank status\r\nUse `/lv` to list tasks for a particular level\r\nUse coins to access `/bot` commands', ephemeral: true });
 	},
 };
