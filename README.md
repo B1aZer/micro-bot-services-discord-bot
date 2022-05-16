@@ -11,7 +11,8 @@ Move notes from private.md
 ## Now
 
 - [ ] screener, lvlup, test from everyone perspective up
-- [ ] restirc "info" channel to read only
+- [ ] fix motivate
+- [x] restirc "info" channel to read only
 - [x] max number of usages / lim
 - [x] status command / user menu / lelevup UI
 - [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
