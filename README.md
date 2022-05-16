@@ -10,16 +10,19 @@ Move notes from private.md
 
 ## Now
 
-- [ ] screener, lvlup, test from everyone perspective up
+- [x] screener, lvlup, 
+- [ ] test from everyone perspective up
 - [ ] fix motivate
+- [ ] coins
+- [ ] complete payment
+- [ ] finish levelup
 - [x] restirc "info" channel to read only
 - [x] max number of usages / lim
 - [x] status command / user menu / lelevup UI
 - [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
 - [ ] random nft + cleanup reddit praw
 - [ ] add community commands
-- [ ] add coins, complete payment
-- [ ] add tasks
+- [ ] add other tasks
 - [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
 - [ ] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
@@ -28,8 +31,8 @@ Move notes from private.md
 - [x] Opensea monitor for new listings (floor price), new collection listings (9)daily)
 - [x] add links to embeds
 - [x] fix python twitter
-- [ ] enter command
-- [ ] Finish landing, back req, disable invites
+- [x] enter command
+- [ ] Finish landing. Alternate enter method
 - [ ] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
 - [ ] check bots commands only ephemeral
 - [x] paid commands always visible in !help
