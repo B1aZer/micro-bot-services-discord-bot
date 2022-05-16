@@ -19,7 +19,7 @@ module.exports = class taskBase {
         const user = (await axios.get(`${process.env.MONGODB_URL}/user`, {params: {userID: interaction.user.id}})).data
         const hasAnswers = answer && user?.tasks.some(task => task.id === this.params.id)
         if (hasAnswers) {
-            await interaction.reply('You already submitted an answer');
+            await interaction.reply('You\'ve already submitted an answer. Try another command');
             return;
         }
         // dumb reply
