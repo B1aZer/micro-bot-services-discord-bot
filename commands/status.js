@@ -16,7 +16,6 @@ module.exports = {
 	,
 	async execute(interaction) {
 		await interaction.deferReply({ ephemeral: true })
-		console.log(interaction.member);
 		// argument or context or self
 		const user = interaction.options.getUser('target')
 			|| interaction.options.getUser('user')

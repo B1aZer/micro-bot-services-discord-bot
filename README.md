@@ -10,13 +10,16 @@ Move notes from private.md
 
 ## Now
 
+- [ ] screener, lvlup, test from everyone perspective up
+- [ ] restirc "info" channel to read only
 - [x] max number of usages / lim
 - [x] status command / user menu / lelevup UI
-- [ ] add role routine add on xp. how we count tasks there were not complete?
+- [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
 - [ ] random nft + cleanup reddit praw
 - [ ] add community commands
 - [ ] add coins, complete payment
 - [ ] add tasks
+- [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
 - [ ] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
 - [x] Scrap upcoming, with tw,disc count, schedule 1 day
@@ -27,6 +30,7 @@ Move notes from private.md
 - [ ] enter command
 - [ ] Finish landing, back req, disable invites
 - [ ] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
+- [ ] check bots commands only ephemeral
 - [x] paid commands always visible in !help
 - [ ] Check permissions for channels
 - [ ] Finish payment, coins
@@ -41,10 +45,18 @@ Move notes from private.md
 - [ ] randomize whitelists (in command)
 - [ ] Cron for some reason sends message on second try, remove ntf error to file
 - [ ] remove <> from scripts, add in bot presentation
+- [ ] precentage green below floor price opensea monitor
 - [x] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
 - [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
 - [f] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
 - [ ] praw,scraper have secrets in code, search secret, move dotenv
+
+## Start
+
+- start opensea-monitor
+- start mongo
+- start praw
+- start bot
 
 ## Bots
 
