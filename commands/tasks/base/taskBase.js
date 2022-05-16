@@ -16,10 +16,10 @@ module.exports = class taskBase {
     async execute(interaction) {
         const answer = interaction.options.getString('answer');
         // check if answer exists
-        const user = (await axios.get(`${process.env.MONGODB_URL}/user`, {params: {userID: interaction.user.id}})).data
+        const user = (await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: interaction.user.id } })).data
         const hasAnswers = answer && user?.tasks.some(task => task.id === this.params.id)
         if (hasAnswers) {
-            await interaction.reply('You\'ve already submitted an answer. Try another command');
+            await interaction.reply({ content: 'You\'ve already submitted an answer. Try another task', ephemeral: true });
             return;
         }
         // dumb reply
