@@ -4,6 +4,7 @@ const data = require("./community/data/community.json")[0]
 const motivateCommand = new CommunityBase(data)
 
 module.exports = {
+    cooldown: 10,
     data: new SlashCommandBuilder()
         .setName(motivateCommand.name)
         .setDescription(motivateCommand.description)

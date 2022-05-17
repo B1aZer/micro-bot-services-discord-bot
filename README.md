@@ -31,6 +31,7 @@ Move notes from private.md
 - [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
 - [ ] random nft + cleanup reddit praw
 - [ ] add community commands
+- [ ] levelup json
 - [ ] object.assign in tasks base class
 - [ ] add other tasks
 - [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
