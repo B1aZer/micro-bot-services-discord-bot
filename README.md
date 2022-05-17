@@ -15,8 +15,7 @@ Move notes from private.md
 - [x] replace | with |||, remove unicode from name in logs?
 - [x] refactor bot tasks, make base calss and extend, w o wo json
 - [x] fix motivate
-- [ ] finish levelup
-- [ ] levelup json
+- [x] finish levelup
 - [ ] complete lv1
 - [x] coins, db => 
 - [x] refactor paid commands =>
@@ -31,6 +30,7 @@ Move notes from private.md
 - [x] status command / user menu / lelevup UI
 - [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
 - [ ] refactor levelup levels, commands, rank command num of commands
+- [ ] levelup json
 - [ ] coins in levelup are static
 - [ ] random nft + cleanup reddit praw
 - [ ] add community commands

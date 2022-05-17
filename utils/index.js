@@ -51,7 +51,7 @@ module.exports = {
                     coins: userDB.coins + 100
                 })
                 // message
-                await interaction.followUp({embeds: [embed]})
+                await interaction.followUp({ embeds: [embed], ephemeral: true })
             }
         }
     },
