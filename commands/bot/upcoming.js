@@ -3,12 +3,12 @@ const BotBase = require("./base/botBase")
 const data = require("./data/bot.json")[3]
 
 class UpcomingBot extends BotBase {
-    formatField(elements) {
-        return `
+    async formatField(elements) {
+        return Promise.resolve(`
         Mint Date: ${time(new Date(elements[1].trim()))}
         Twitter Followers: ${inlineCode(elements[2])}
         ${hyperlink(elements[3])}
-        `
+        `)
     }
 }
 
