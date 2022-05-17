@@ -13,7 +13,7 @@ Move notes from private.md
 - [x] screener, lvlup, 
 - [ ] test from everyone perspective up
 - [ ] replace | with |||, remove unicode?
-- [ ] refactor bot tasks, make base calss and extend, w o wo json
+- [x] refactor bot tasks, make base calss and extend, w o wo json
 - [ ] fix motivate
 - [ ] coins, db => 
 - [x] refactor paid commands =>

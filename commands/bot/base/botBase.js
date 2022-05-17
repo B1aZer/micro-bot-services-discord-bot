@@ -8,20 +8,20 @@ module.exports = class BotBase {
         Object.assign(this, params);
         this.separator = process.env.LOG_FILES_SEPARATOR;
     }
-    async getSliced(log) {
-        return Promise.resolve(log.split('\n').slice(0, this.count))
+    getSliced(log) {
+        return (log.split('\n').slice(0, this.count))
     }
-    async formatField(elements) {
-        return Promise.resolve(`
+    formatField(elements) {
+        return `
         Mints: ${inlineCode(elements[1])}
         ${hyperlink(elements[2])}
-        `)
+        `
     }
     async execute(interaction) {
         await interaction.deferReply({ ephemeral: true })
         const command_files = fs.readdirSync(this.path).reverse();
         const log = fs.readFileSync(`${this.path}/${command_files[0]}`, 'utf8')
-        const top10 = await this.getSliced(log)
+        const top10 = this.getSliced(log)
         const embed = new Discord.MessageEmbed()
             .setColor(process.env.DISCORD_EMBED_COLOR)
             .setTitle(this.title)
@@ -30,7 +30,7 @@ module.exports = class BotBase {
             .setTimestamp()
         for (let i = 0; i < top10.length; i++) {
             const elements = top10[i].split(this.separator);
-            elements[0] && embed.addField(elements[0], (await this.formatField(elements)))
+            elements[0] && embed.addField(elements[0], this.formatField(elements))
         }
         await interaction.editReply({ embeds: [embed] })
     }
