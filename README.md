@@ -15,6 +15,8 @@ Move notes from private.md
 - [x] replace | with |||, remove unicode from name in logs?
 - [x] refactor bot tasks, make base calss and extend, w o wo json
 - [ ] fix motivate
+- [ ] finish levelup
+- [ ] complete lv1
 - [x] coins, db => 
 - [x] refactor paid commands =>
 - [x] require coins =>
@@ -23,8 +25,6 @@ Move notes from private.md
 - [ ] upload to dev =>
 - [ ] make listener in bot, modify coins in db => 
 - [ ] complete payment
-- [ ] finish levelup
-- [ ] complete lv1
 - [x] restirc "info" channel to read only
 - [x] max number of usages / lim
 - [x] status command / user menu / lelevup UI
