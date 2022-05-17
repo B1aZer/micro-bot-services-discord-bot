@@ -46,10 +46,10 @@ module.exports = class TaskBase {
             }]
         })
         // save to disk
-        this.loggerInfluencer.write(`${interaction.user.tag} | ${answer}\r\n`)
+        this.loggerInfluencer.write(`${interaction.user.tag} ${process.env.LOG_FILES_SEPARATOR} ${answer}\r\n`)
         // save to channel
         const channel = interaction.client.channels.cache.get(process.env[this.params.channelId]);
-        channel.send(`${interaction.user.tag} | ${answer}`);
+        channel.send(`${interaction.user.tag} ${process.env.LOG_FILES_SEPARATOR} ${answer}`);
         // reply
         await interaction.editReply('Submitted');
     }
