@@ -1,29 +1,50 @@
+require('dotenv').config();
 const lv1Tasks = require('../commands/tasks/data/lv1.json')
 const axios = require('axios')
+const Discord = require("discord.js");
+const { inlineCode } = require('@discordjs/builders');
+const lvTasks = {
+    1: lv1Tasks,
+    //TODO:
+    2: []
+}
 
 module.exports = {
     levelUp: async (interaction) => {
         const allRoles = interaction.client.roles.sort((a, b) => a.rawPosition - b.rawPosition)
         const memberRoles = interaction.member.roles.cache.sort((a, b) => b.rawPosition - a.rawPosition)
         const highestRole = memberRoles.first()
+        // level
         const highestRoleIndex = [...allRoles.values()].indexOf(highestRole)
-        // get level
-        console.log(highestRoleIndex);
-        // get num required tasks for level
-        console.log(lv1Tasks.length);
-        // get num completed tasks for level
-        console.log((await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: interaction.user.id } })).data.tasks.length);
-        // if (num completed === num required)
-        if (highestRoleIndex + 1 <= [...allRoles].length - 1) {
+        const userDB = (await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: interaction.user.id } })).data
+        const numCompletedTasks = userDB.tasks.length
+        const numRequiredTasks = lvTasks[highestRoleIndex].length
+        if (numCompletedTasks === numRequiredTasks &&
+            highestRoleIndex + 1 <= [...allRoles].length - 1) {
             const nextRole = [...allRoles][highestRoleIndex + 1][1]
-            //interaction.member.roles.add(nextRole);
-            //fancy levelup message, visible or no?  Visible to log channel
-            //https://discord.com/channels/958742337394208808/959174142798745670/964171996218921007
-            /*
-            1. Levels (left panel channels) with new quests = message
-            2. Command drop
-            3. Coins drop
-*/
+            if (!interaction.member.roles.cache.some(role => role.name === nextRole.name)) {
+                // role
+                interaction.member.roles.add(nextRole);
+                const embed = new Discord.MessageEmbed()
+                    .setColor(process.env.DISCORD_EMBED_COLOR)
+                    .setTitle(interaction.user.username)
+                    .setDescription(`CONGRATS!
+
+                    Level completed.
+                    Tasks solved: ${inlineCode('5')}
+                    Command unlocked: ${inlineCode('/motivate')}
+                    Coins received: ${inlineCode('100')}
+                    `)
+                    .setAuthor({ name: 'GooDeeBot', iconURL: 'https://i.imgur.com/8nB0tI0.jpg' })
+                    .setTimestamp()
+                // coins
+                await axios.put(`${process.env.MONGODB_URL}/user`, {
+                    userID: interaction.user.id,
+                    coins: userDB.coins + 100
+                })
+                // message
+                await interaction.followUp({embeds: [embed]})
+            }
         }
     },
 }
