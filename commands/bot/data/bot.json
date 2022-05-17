@@ -1,0 +1,42 @@
+[
+    {
+        "name": "minting",
+        "description": "Shows most minted NFT projects for the past hour.",
+        "title": "Minting Projects",
+        "coins": 10,
+        "path": "./logs/etherscan_scraper_logs",
+        "count" : 10
+    },
+    {
+        "name": "recent",
+        "description": "Shows recent NFT collections added to OpenSea.",
+        "title": "Recently Added Collections",
+        "coins": 10,
+        "path": "./logs/opensea-recent-collections",
+        "count" : 25
+    },
+    {
+        "name": "trending",
+        "description": "Shows trending NFT twitter accounts for the past 24 hours.",
+        "title": "Trending Twitter Accounts",
+        "coins": 10,
+        "path": "./logs/following_logs",
+        "count" : 25
+    },
+    {
+        "name": "upcoming",
+        "description": "Shows upcoming NFT mints for tomorrows date.",
+        "title": "Upcoming NFT Projects",
+        "coins": 10,
+        "path": "./logs/rare_scraper_logs",
+        "count" : 25
+    },
+    {
+        "name": "whitelists",
+        "description": "Shows upcoming prominent NFT collections.",
+        "title": "Collections Whitelists",
+        "coins": 10,
+        "path": "./logs/upcoming-whitelists",
+        "count" : 25
+    }
+]

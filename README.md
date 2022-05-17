@@ -13,9 +13,10 @@ Move notes from private.md
 - [x] screener, lvlup, 
 - [ ] test from everyone perspective up
 - [ ] replace | with |||, remove unicode?
+- [ ] refactor bot tasks, make base calss and extend, w o wo json
 - [ ] fix motivate
 - [ ] coins, db => 
-- [ ] refactor paid commands =>
+- [x] refactor paid commands =>
 - [ ] require coins =>
 - [ ] payment UI and code, $10 - 100 coins, 10 each use, Range Inputs from 100 to 10000 =>
 - [ ] complete contract =>
@@ -30,6 +31,7 @@ Move notes from private.md
 - [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
 - [ ] random nft + cleanup reddit praw
 - [ ] add community commands
+- [ ] object.assign in tasks base class
 - [ ] add other tasks
 - [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
 - [ ] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)

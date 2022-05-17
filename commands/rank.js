@@ -11,7 +11,7 @@ module.exports = {
 		.addSubcommand(subcommand =>
 			subcommand
 				.setName('user')
-				.setDescription('Shows user rank.')
+				.setDescription('Shows user status.')
 				.addUserOption(option => option.setName('target').setDescription('The user')))
 	,
 	async execute(interaction) {

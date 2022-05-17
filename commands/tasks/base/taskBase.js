@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const axios = require('axios');
 const fs = require('fs');
 
-module.exports = class taskBase {
+module.exports = class TaskBase {
     constructor(params) {
         this.params = params
         this.loggerInfluencer = fs.createWriteStream(`/home/hipi/Sites/GooDee/_utils/out/tasks/${this.params.id}.log`, {
