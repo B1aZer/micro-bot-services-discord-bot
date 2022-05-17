@@ -12,12 +12,12 @@ Move notes from private.md
 
 - [x] screener, lvlup, 
 - [ ] test from everyone perspective up
-- [ ] replace | with |||, remove unicode?
+- [x] replace | with |||, remove unicode from name in logs?
 - [x] refactor bot tasks, make base calss and extend, w o wo json
 - [ ] fix motivate
-- [ ] coins, db => 
+- [x] coins, db => 
 - [x] refactor paid commands =>
-- [ ] require coins =>
+- [x] require coins =>
 - [ ] payment UI and code, $10 - 100 coins, 10 each use, Range Inputs from 100 to 10000 =>
 - [ ] complete contract =>
 - [ ] upload to dev =>
