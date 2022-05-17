@@ -20,6 +20,7 @@ module.exports = {
 		const user = interaction.options.getUser('target')
 			|| interaction.options.getUser('user')
 			|| interaction.user
+		const userDB = (await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: interaction.user.id } })).data
 		const member = await interaction.guild.members.fetch(user.id)
 		const highestRole = member.roles.cache.sort((a, b) => b.rawPosition - a.rawPosition).first()
 		const embed = new Discord.MessageEmbed()
@@ -29,8 +30,8 @@ module.exports = {
 			.setDescription(`
 			${bold('Level')}: ${highestRole.rawPosition}
 			${bold('Role')}: ${highestRole.name}
-			${bold('Commands')}: 5
-			${bold('Coins')}: 100
+			${bold('Commands')}: ${highestRole.rawPosition - 1}
+			${bold('Coins')}: ${userDB.coins}
 		`)
 			.setTimestamp()
 			.setFooter({ text: interaction.guild.name })
