@@ -6,7 +6,8 @@ const { inlineCode } = require('@discordjs/builders');
 const lvTasks = {
     1: lv1Tasks,
     //TODO:
-    2: []
+    2: [],
+    28: []
 }
 
 module.exports = {
@@ -28,12 +29,10 @@ module.exports = {
                 const embed = new Discord.MessageEmbed()
                     .setColor(process.env.DISCORD_EMBED_COLOR)
                     .setTitle(interaction.user.username)
-                    .setDescription(`CONGRATS!
-
-                    Level completed.
-                    Tasks solved: ${inlineCode('5')}
-                    Command unlocked: ${inlineCode('/motivate')}
-                    Coins received: ${inlineCode('100')}
+                    .setDescription(`Level completed.
+                        Tasks solved: ${inlineCode('5')}
+                        Command unlocked: ${inlineCode('/motivate')}
+                        Coins received: ${inlineCode('100')}
                     `)
                     .setAuthor({ name: 'GooDeeBot', iconURL: 'https://i.imgur.com/8nB0tI0.jpg' })
                     .setTimestamp()
