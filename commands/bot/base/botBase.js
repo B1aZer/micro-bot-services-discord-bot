@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { inlineCode, hyperlink } = require('@discordjs/builders');
 const Discord = require("discord.js");
 const axios = require('axios');
 
@@ -11,11 +10,9 @@ module.exports = class BotBase {
     getSliced(log) {
         return (log.split('\n').slice(0, this.count))
     }
+    // override
     formatField(elements) {
-        return `
-        Mints: ${inlineCode(elements[1])}
-        ${hyperlink(elements[2])}
-        `
+        return `${elements[0]}`;
     }
     async execute(interaction) {
         const userDB = (await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: interaction.user.id } })).data

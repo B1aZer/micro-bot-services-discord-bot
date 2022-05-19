@@ -10,6 +10,13 @@ Move notes from private.md
 
 ## Now
 
+- [ ] 0.185 b1z, 0.081 
+- [ ] 3.905 / 2 = 1.9525 
+- [ ] 2.16402 + 1.9525 = 4.11652
+- [ ] 4.11652 - 0.185 - 0.081 - 1 = 2.85052
+- [ ] 2.85052 / 5 = 0.570104
+- [ ] mine = 0.570104 + 0.185 = 0.755104 + 2.3 = 3
+- [ ] pciky = 0.570104 + 0.081 = 0.651104
 - [x] screener, lvlup, 
 - [ ] test from everyone perspective up
 - [x] replace | with |||, remove unicode from name in logs?
@@ -36,20 +43,31 @@ Move notes from private.md
 - [x] log user commands
 - [x] upload to rinkeby =>
 - [x] message newtork
-- [ ] cp script bundle
-- [ ] mv handler
-- [ ] upload to server, bundle
-- [ ] send discord embed for coins in log channel
+- [x] cp script bundle
+- [x] mv handler
+- [-] move eslint folder
+- [x] replace discord url, script?
+- [x] upload to server
+- [ ] do not write blank files, rm if blank?
+- [ ] log all sensitive data, start should all log to log
+- [x] add bot price in description
+- [x] send discord embed for coins in log channel
+- [ ] buy command
+- [ ] ---
 - [ ] refactor levelup levels, commands, rank command num of commands
 - [ ] levelup json
 - [ ] coins in levelup are static
+- [ ] log levelups
+- [ ] ---
 - [ ] object.assign in tasks base class
-- [ ] add other tasks
+- [ ] add 2nd other tasks
 - [ ] random nft + cleanup reddit praw
-- [ ] add community commands
-- [ ] add some discord channels, see ohm, concave etc. see next paragraph
+- [ ] add /meme command
+- [ ] check bots commands only ephemeral
+- [ ] ---
+- [ ] remove <> from scripts, add in bot presentation
+- [ ] precentage green below floor price opensea monitor
 - [ ] opensea monitor, push to queue with max 5 times
-- [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
 - [+] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
 - [x] Scrap upcoming, with tw,disc count, schedule 1 day
@@ -58,10 +76,7 @@ Move notes from private.md
 - [x] add links to embeds
 - [x] fix python twitter
 - [x] enter command
-- [ ] setColor to dotenv
-- [ ] Finish landing. Alternate enter method
 - [-] Roles, Screener. 4 commands free by screener questions. Getting enlighted role (1nd from 2nd tier gives 100 coins and opens marketing tasks)
-- [ ] check bots commands only ephemeral
 - [x] paid commands always visible in !help
 - [-] Check permissions for channels
 - [x] Finish payment, coins
@@ -70,25 +85,44 @@ Move notes from private.md
 - [-] 5 roles (crypto dumbass, crypto nomad, crypto lost mmoney, crypto junkie, cryptographer)
 - [x] 5 commands (upcoming, recent, minting, twitter, whitelist)
 - [x] add tasks, task are commands in different dir
+- [ ] prepare discord first
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
 - [x] commands timeout and max number of us
 - [x] randomize whitelists (in command)
 - [ ] Cron for some reason sends message on second try, remove ntf error to file
-- [ ] remove <> from scripts, add in bot presentation
-- [ ] precentage green below floor price opensea monitor
+- [ ] setColor to dotenv
+- [ ] praw,scraper have secrets in code, search secret, move dotenv
+- [ ] Finish landing. Alternate enter method
 - [x] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
 - [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
 - [f] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
-- [ ] praw,scraper have secrets in code, search secret, move dotenv
 
 ## Discord
 
+- - [ ] add some discord channels, see ohm, concave etc. see next paragraph
+- - [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
+- clean up channels
+- announcer role, check code
+- b1z
+- faq
 - nft talk, defi talk, whitelists, twitter inf, discords
 - bot feedback, bugs, suggestions
 - arrow capital member
 - only share password with people you trust
 - change announcer member to mess
+
+## Collections
+
+- https://twitter.com/AkumuDragonz
+- https://twitter.com/greatgoatsnft
+- https://twitter.com/VinceniaNft
+- https://twitter.com/TrippinApeNFT
+- https://twitter.com/TrippyKidzNFT
+
+## BOT ideas
+
+- any good NFT project has You might like projects on the side
 
 ## Semilocns LOLs
 ```
