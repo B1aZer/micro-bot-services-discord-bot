@@ -16,11 +16,16 @@ Move notes from private.md
 - [x] refactor bot tasks, make base calss and extend, w o wo json
 - [x] fix motivate
 - [x] finish levelup
-- [ ] complete lv1
+- [X] complete lv1
 - [x] coins, db => 
 - [x] refactor paid commands =>
 - [x] require coins =>
-- [ ] payment UI and code, $10 - 100 coins, 10 each use, Range Inputs from 100 to 10000 =>
+- [x] UI => server => discord
+- [x] certbot
+- [ ] disord button => js bundler => ethers
+- [ ] contract => bot event
+- [x] test in bootsrap complied repo UI => move to flask server bundle
+- [x] payment UI and code, $10 - 100 coins, 10 each use, Range Inputs from 100 to 10000 =>
 - [ ] complete contract =>
 - [ ] upload to dev =>
 - [ ] make listener in bot, modify coins in db => 
@@ -29,13 +34,16 @@ Move notes from private.md
 - [x] max number of usages / lim
 - [x] status command / user menu / lelevup UI
 - [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
+- [ ] log user commands
 - [ ] refactor levelup levels, commands, rank command num of commands
 - [ ] levelup json
 - [ ] coins in levelup are static
 - [ ] random nft + cleanup reddit praw
 - [ ] add community commands
+- [ ] add some discord channels, see ohm, concave etc.
 - [ ] object.assign in tasks base class
 - [ ] add other tasks
+- [ ] opensea monitor, push to queue with max 5 times
 - [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
 - [ ] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
@@ -68,6 +76,14 @@ Move notes from private.md
 - [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
 - [f] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
 - [ ] praw,scraper have secrets in code, search secret, move dotenv
+
+## Discord
+
+- nft talk, defi talk, whitelists, twitter inf, discords
+- bot feedback, bugs, suggestions
+- arrow capital member
+- only share password with people you trust
+- change announcer member to mess
 
 ## Start
 
