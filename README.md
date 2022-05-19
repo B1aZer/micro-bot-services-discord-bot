@@ -22,30 +22,35 @@ Move notes from private.md
 - [x] require coins =>
 - [x] UI => server => discord
 - [x] certbot
-- [ ] disord button => js bundler => ethers
-- [ ] contract => bot event
+- [x] disord button => js bundler => ethers
+- [x] contract => bot event
 - [x] test in bootsrap complied repo UI => move to flask server bundle
 - [x] payment UI and code, $10 - 100 coins, 10 each use, Range Inputs from 100 to 10000 =>
-- [ ] complete contract =>
-- [ ] upload to dev =>
-- [ ] make listener in bot, modify coins in db => 
-- [ ] complete payment
+- [x] complete contract =>
+- [x] make listener in bot, modify coins in db => 
+- [x] complete payment
 - [x] restirc "info" channel to read only
 - [x] max number of usages / lim
 - [x] status command / user menu / lelevup UI
 - [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
-- [ ] log user commands
+- [x] log user commands
+- [ ] upload to rinkeby =>
+- [ ] message newtork
+- [ ] cp script bundle
+- [ ] mv handler
+- [ ] upload to server, bundle
+- [ ] send discord embed for coins in log channel
 - [ ] refactor levelup levels, commands, rank command num of commands
 - [ ] levelup json
 - [ ] coins in levelup are static
-- [ ] random nft + cleanup reddit praw
-- [ ] add community commands
-- [ ] add some discord channels, see ohm, concave etc.
 - [ ] object.assign in tasks base class
 - [ ] add other tasks
+- [ ] random nft + cleanup reddit praw
+- [ ] add community commands
+- [ ] add some discord channels, see ohm, concave etc. see next paragraph
 - [ ] opensea monitor, push to queue with max 5 times
 - [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
-- [ ] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
+- [+] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
 - [x] Scrap upcoming, with tw,disc count, schedule 1 day
 - [x] Finish twitter, schedule
@@ -59,7 +64,7 @@ Move notes from private.md
 - [ ] check bots commands only ephemeral
 - [x] paid commands always visible in !help
 - [-] Check permissions for channels
-- [-] Finish payment, coins
+- [x] Finish payment, coins
 - [x] Commands for each bot
 - [-] 5 bot commands and 5 images (motivate, memes, pepe, culture, random nft (https://docs.opensea.io/reference/retrieving-orders))
 - [-] 5 roles (crypto dumbass, crypto nomad, crypto lost mmoney, crypto junkie, cryptographer)
@@ -68,7 +73,7 @@ Move notes from private.md
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
 - [x] commands timeout and max number of us
-- [ ] randomize whitelists (in command)
+- [x] randomize whitelists (in command)
 - [ ] Cron for some reason sends message on second try, remove ntf error to file
 - [ ] remove <> from scripts, add in bot presentation
 - [ ] precentage green below floor price opensea monitor
@@ -84,6 +89,23 @@ Move notes from private.md
 - arrow capital member
 - only share password with people you trust
 - change announcer member to mess
+
+## Semilocns LOLs
+```
+    client.roles = rolesManager.roles.cache
+    ['ethereum_handler', 'opensea_handler'].forEach(handler => {
+        require(`../handlers/${handler}`)(client);
+    });
+```
+Calls first statemns with array as arg wo semicolon
+```
+  return log.split('\n')
+            // shuffle
+            .sort((a, b) => 0.5 - Math.random())
+            .slice(0, this.count)
+            .sort((a, b) => new Date(b.split(this.separator)[2].trim()) - new Date(a.split(this.separator)[2].trim()))
+```
+will only return first statement wo semicolon
 
 ## Start
 
