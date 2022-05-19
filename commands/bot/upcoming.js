@@ -6,8 +6,8 @@ class UpcomingBot extends BotBase {
     formatField(elements) {
         return `
         Mint Date: ${time(new Date(elements[1].trim()))}
-        Twitter Followers: ${inlineCode(elements[2])}
-        ${hyperlink(elements[3])}
+        Twitter Followers: ${inlineCode(elements[3])}
+        ${hyperlink(elements[2])}
         `
     }
 }
