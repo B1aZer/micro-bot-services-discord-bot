@@ -2,12 +2,10 @@ const WebSocket = require('ws');
 const Discord = require("discord.js");
 
 module.exports = (client) => {
-    const ws = new WebSocket('ws://localhost:3080');
-    let ready = false;
-    
+    const ws = new WebSocket('ws://localhost:3080'); 
     ws.on('message', function message(jsonData) {
-        const data = JSON.parse(jsonData)
-        if (data && ready) {
+        const data = JSON.parse(jsonData);
+        if (data) {
             const embed = new Discord.MessageEmbed()
                 .setColor(data.below ? "#932f00" : "#00936f")
                 .setTitle(data.below ? 'Listed BELOW floor price' : 'Listed on floor price')
@@ -16,11 +14,8 @@ module.exports = (client) => {
                 .setURL(data.permalink)
                 .setImage(data.image)
                 .addField(data.collection, `ETH price: ${data.eth_price}\r\nFloor price: ${data.floor_price}\r\nUSD price: ${data.usd_price}\r\n${data.permalink}`)
-                .setTimestamp()
+                .setTimestamp();
             client.channels.cache.get(process.env.OPENSEA_MONITOR_CHANNEL_ID).send({ embeds: [embed] });
         }
     });
-    client.on('ready', client => {
-        ready = true;
-    })
 }

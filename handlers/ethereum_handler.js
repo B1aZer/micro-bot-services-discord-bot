@@ -7,7 +7,7 @@ const logger = fs.createWriteStream(`/home/hipi/Sites/GooDee/_utils/out/coins/ma
 const { memberNicknameMention } = require('@discordjs/builders');
 
 const coinPrice = 0.00033;
-const contractAddress = '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0';
+const contractAddress = process.env.CONTRACT_ADDRESS;
 const abi = [
     {
         "inputs": [],
@@ -113,9 +113,9 @@ const abi = [
     }
 ];
 
-module.exports = async (client) => {
+module.exports = (client) => {
     //localhost:8545
-    const provider = new ethers.providers.JsonRpcProvider();
+    const provider = new ethers.providers.JsonRpcProvider(process.env.RINKEBY_API_URL);
     const gooDeeContract = new ethers.Contract(contractAddress, abi, provider);
     // Receive an event when ANY transfer occurs
     gooDeeContract.on("buyCoinsEvent", async (from, discordID, amount, event) => {
@@ -143,9 +143,9 @@ module.exports = async (client) => {
         })
         // message
         // TODO: will not work until ready
-        //const channel = client.channels.cache.get(process.env.LOG_CHANNEL_ID);
-        //channel?.send(`${memberNicknameMention(discordID.toString())} received ${numberOfCoins} coins`);
-        console.log(`${discordID.toString()} received ${numberOfCoins} coins`);
+        const channel = client.channels.cache.get(process.env.LOG_CHANNEL_ID);
+        channel.send(`${memberNicknameMention(discordID.toString())} received ${numberOfCoins} coins`);
+        //console.log(`${discordID.toString()} received ${numberOfCoins} coins`);
     });
 
 }
