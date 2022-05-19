@@ -9,6 +9,7 @@ module.exports = {
 		if (!command) return;
 		// TODO: shares cooldown for a group of subcommands
 		if (!cooldowns.set(interaction, command)) return;
+		console.log(`User ${interaction.member.id} used ${command.data.name} command`)
 		try {
 			await command.execute(interaction);
 			await levelUp(interaction);
