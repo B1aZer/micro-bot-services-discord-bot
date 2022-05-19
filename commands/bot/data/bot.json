@@ -1,7 +1,7 @@
 [
     {
         "name": "minting",
-        "description": "Shows most minted NFT projects for the past hour.",
+        "description": "Shows most minted NFT projects for the past hour. Require 10 coins.",
         "title": "Minting Projects",
         "coins": 10,
         "path": "./logs/etherscan_scraper_logs",
@@ -9,7 +9,7 @@
     },
     {
         "name": "recent",
-        "description": "Shows recent NFT collections added to OpenSea.",
+        "description": "Shows recent NFT collections added to OpenSea. Require 10 coins.",
         "title": "Recently Added Collections",
         "coins": 10,
         "path": "./logs/opensea-recent-collections",
@@ -17,7 +17,7 @@
     },
     {
         "name": "trending",
-        "description": "Shows trending NFT twitter accounts for the past 24 hours.",
+        "description": "Shows trending NFT twitter accounts for the past 24 hours. Require 10 coins.",
         "title": "Trending Twitter Accounts",
         "coins": 10,
         "path": "./logs/following_logs",
@@ -25,7 +25,7 @@
     },
     {
         "name": "upcoming",
-        "description": "Shows upcoming NFT mints for tomorrows date.",
+        "description": "Shows upcoming NFT mints for tomorrows date. Require 10 coins.",
         "title": "Upcoming NFT Projects",
         "coins": 10,
         "path": "./logs/rare_scraper_logs",
@@ -33,7 +33,7 @@
     },
     {
         "name": "whitelists",
-        "description": "Shows upcoming prominent NFT collections.",
+        "description": "Shows upcoming prominent NFT collections. Require 10 coins.",
         "title": "Collections Whitelists",
         "coins": 10,
         "path": "./logs/upcoming-whitelists",
