@@ -4,7 +4,6 @@ const axios = require('axios')
 const logger = fs.createWriteStream(`/home/hipi/Sites/GooDee/_utils/out/coins/main.log`, {
     flags: 'a'
 });
-const { memberNicknameMention } = require('@discordjs/builders');
 
 const coinPrice = 0.00033;
 const contractAddress = process.env.CONTRACT_ADDRESS;
@@ -142,9 +141,8 @@ module.exports = (client) => {
             txs: [event.transactionHash.toString()]
         })
         // message
-        // TODO: will not work until ready
         const channel = client.channels.cache.get(process.env.LOG_CHANNEL_ID);
-        channel.send(`${memberNicknameMention(discordID.toString())} received ${numberOfCoins} coins`);
+        channel.send(`<@!${discordID.toString()}> received ${numberOfCoins} coins`);
         //console.log(`${discordID.toString()} received ${numberOfCoins} coins`);
     });
 

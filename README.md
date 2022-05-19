@@ -34,8 +34,8 @@ Move notes from private.md
 - [x] status command / user menu / lelevup UI
 - [x] add role routine add on xp. how we count tasks there were not complete? Split to lv1 subtasks and count after exec
 - [x] log user commands
-- [ ] upload to rinkeby =>
-- [ ] message newtork
+- [x] upload to rinkeby =>
+- [x] message newtork
 - [ ] cp script bundle
 - [ ] mv handler
 - [ ] upload to server, bundle
