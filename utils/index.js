@@ -1,4 +1,3 @@
-require('dotenv').config();
 // TODO: to a separate file
 const lv1Tasks = require('../commands/tasks/data/lv1.json')
 const axios = require('axios')

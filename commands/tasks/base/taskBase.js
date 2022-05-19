@@ -1,4 +1,3 @@
-require('dotenv').config();
 const Discord = require("discord.js");
 const axios = require('axios');
 const fs = require('fs');

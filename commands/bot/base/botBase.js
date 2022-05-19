@@ -1,4 +1,3 @@
-require('dotenv').config();
 const fs = require("fs");
 const { inlineCode, hyperlink } = require('@discordjs/builders');
 const Discord = require("discord.js");
