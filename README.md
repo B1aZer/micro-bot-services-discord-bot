@@ -48,16 +48,15 @@ Move notes from private.md
 - [-] move eslint folder
 - [x] replace discord url, script?
 - [x] upload to server
-- [ ] do not write blank files, rm if blank?
-- [ ] log all sensitive data, start should all log to log
+- [x] do not write blank files, rm if blank?
 - [x] add bot price in description
 - [x] send discord embed for coins in log channel
-- [ ] buy command
+- [x] buy command
 - [ ] ---
-- [ ] refactor levelup levels, commands, rank command num of commands
-- [ ] levelup json
-- [ ] coins in levelup are static
-- [ ] log levelups
+- [x] refactor levelup levels, commands, rank command num of commands
+- [x] levelup json
+- [x] coins in levelup are static
+- [x] log levelups
 - [ ] ---
 - [ ] object.assign in tasks base class
 - [ ] add 2nd other tasks
@@ -65,9 +64,10 @@ Move notes from private.md
 - [ ] add /meme command
 - [ ] check bots commands only ephemeral
 - [ ] ---
-- [ ] remove <> from scripts, add in bot presentation
+- [x] remove <> from scripts, add in bot presentation
 - [ ] precentage green below floor price opensea monitor
 - [ ] opensea monitor, push to queue with max 5 times
+- [ ] log all sensitive data, start should all log to log
 - [+] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
 - [x] Scrap upcoming, with tw,disc count, schedule 1 day
