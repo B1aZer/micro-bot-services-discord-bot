@@ -9,8 +9,8 @@ module.exports = class TaskBase {
             flags: 'a'
         });
     }
-    check() {
-
+    async checkIfErr() {
+        return false;
     }
     async execute(interaction) {
         const answer = interaction.options.getString('answer');
@@ -34,8 +34,11 @@ module.exports = class TaskBase {
             interaction.editReply({ embeds: [embed] });
             return;
         }
-        // TODO: check twitter
-        this.check()
+        const errorMsg = await this.checkIfErr(answer);
+        if (errorMsg) {
+            interaction.editReply({ content: errorMsg, ephemeral: true });
+            return;
+        }
         // save to db
         axios.put(`${process.env.MONGODB_URL}/user`, {
             userID: interaction.user.id,

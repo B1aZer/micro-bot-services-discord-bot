@@ -52,6 +52,9 @@ Move notes from private.md
 - [x] add bot price in description
 - [x] send discord embed for coins in log channel
 - [x] buy command
+- [ ] bot reward as lv2
+- [x] twitter check
+- [x] brwowser util
 - [ ] ---
 - [x] refactor levelup levels, commands, rank command num of commands
 - [x] levelup json
@@ -101,9 +104,10 @@ Move notes from private.md
 
 ## Levels
 
-- level2. memes
-- level3. twitter
-- level4. invites
+- level2. bot
+- level3. motivate 1 like
+- level4. culture 2 likes
+- level5. nft 5 likes?
 
 ## Discord
 
@@ -130,7 +134,18 @@ Move notes from private.md
 
 - any good NFT project has You might like projects on the side
 
-## Semilocns LOLs
+## Coding LOLS
+
+#### redirect error
+
+`>>` or `>` will redirect standard output but error will still be visivle in console. Convenient.
+
+#### env
+
+you should put env to the project that importing files
+process that running file will only look in current folder not in imported
+
+#### Semilocns
 ```
     client.roles = rolesManager.roles.cache
     ['ethereum_handler', 'opensea_handler'].forEach(handler => {
@@ -359,7 +374,7 @@ Tier 4-5 tasks aimed at project success.
 
 #### Commands
 
-- [ ] Motivation
+- [x] Motivation
 - [ ] Funny
 - [ ] Creepy
 - [ ] Art/Photo
