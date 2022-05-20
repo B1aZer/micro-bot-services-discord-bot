@@ -14,11 +14,11 @@ module.exports = {
 				.addUserOption(option => option.setName('target').setDescription('The user')))
 	,
 	async execute(interaction) {
-		await interaction.deferReply({ ephemeral: true })
+		await interaction.deferReply({ ephemeral: true });
 		// argument or context or self
 		const user = interaction.options.getUser('target')
 			|| interaction.options.getUser('user')
-			|| interaction.user
+			|| interaction.user;
 		const userDB = (await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: interaction.user.id } })).data
 		const member = await interaction.guild.members.fetch(user.id)
 		const highestRole = member.roles.cache.sort((a, b) => b.rawPosition - a.rawPosition).first()
@@ -29,11 +29,11 @@ module.exports = {
 			.setDescription(`
 			${bold('Level')}: ${highestRole.rawPosition}
 			${bold('Role')}: ${highestRole.name}
-			${bold('Commands')}: ${highestRole.rawPosition - 1}
+			${bold('Commands')}: 0
 			${bold('Coins')}: ${userDB.coins}
-		`)
+			`)
 			.setTimestamp()
-			.setFooter({ text: interaction.guild.name })
+			.setFooter({ text: interaction.guild.name });
 		await interaction.editReply({ embeds: [embed] });
 	},
 };

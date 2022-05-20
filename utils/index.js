@@ -16,6 +16,7 @@ module.exports = {
             console.log(`No user ${interaction.member.id} in DB to levelUP`);
             return;
         }
+        // TODO: Overall tasks not for level
         const numCompletedTasks = userDB.tasks?.length;
         const numRequiredTasks = lvTasks[highestRoleIndex]?.tasks.length;
         if (numCompletedTasks === numRequiredTasks &&
@@ -42,7 +43,7 @@ module.exports = {
                 // role
                 interaction.member.roles.add(nextRole);
                 // log
-                console.log(`user ${interaction.member.id} levelup'd to ${nextRole.name}`);
+                console.log(`user ${interaction.member.id} levelup'd to ${nextRole.name} with ${numCompletedTasks} tasks and ${highestRoleIndex} role`);
             }
         }
     },
