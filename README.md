@@ -60,9 +60,9 @@ Move notes from private.md
 - [ ] ---
 - [ ] object.assign in tasks base class
 - [ ] add 2nd other tasks
-- [ ] random nft + cleanup reddit praw
 - [ ] add /meme command
-- [ ] check bots commands only ephemeral
+- [x] check bots commands only ephemeral
+- [ ] random nft + cleanup reddit praw
 - [ ] ---
 - [x] remove <> from scripts, add in bot presentation
 - [ ] precentage green below floor price opensea monitor
