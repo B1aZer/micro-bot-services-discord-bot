@@ -34,7 +34,7 @@ module.exports = class TaskBase {
             interaction.editReply({ embeds: [embed] });
             return;
         }
-        const errorMsg = await this.checkIfErr(answer);
+        const errorMsg = await this.checkIfErr(answer, interaction);
         if (errorMsg) {
             interaction.editReply({ content: errorMsg, ephemeral: true });
             return;

@@ -55,6 +55,7 @@ Move notes from private.md
 - [ ] bot reward as lv2
 - [x] twitter check
 - [x] brwowser util
+- [ ] check commands access levels
 - [ ] ---
 - [x] refactor levelup levels, commands, rank command num of commands
 - [x] levelup json
@@ -133,6 +134,11 @@ Move notes from private.md
 ## BOT ideas
 
 - any good NFT project has You might like projects on the side
+- ai to find projects?
+
+## hardcoded
+
+- channel id in bot-discord/tasks/data/lv2.json
 
 ## Coding LOLS
 
