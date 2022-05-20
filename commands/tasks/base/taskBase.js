@@ -33,7 +33,7 @@ module.exports = class TaskBase {
             // show task description
             interaction.editReply({ embeds: [embed] });
             return;
-        };
+        }
         // TODO: check twitter
         this.check()
         // save to db
