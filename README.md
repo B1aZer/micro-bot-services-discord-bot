@@ -58,7 +58,7 @@ Move notes from private.md
 - [x] coins in levelup are static
 - [x] log levelups
 - [ ] ---
-- [ ] object.assign in tasks base class
+- [x] object.assign in tasks base class
 - [ ] add 2nd other tasks
 - [ ] add /meme command
 - [x] check bots commands only ephemeral
@@ -67,7 +67,7 @@ Move notes from private.md
 - [x] remove <> from scripts, add in bot presentation
 - [ ] precentage green below floor price opensea monitor
 - [ ] opensea monitor, push to queue with max 5 times
-- [ ] log all sensitive data, start should all log to log
+- [x] log all sensitive data, start should all log to log
 - [+] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
 - [x] Scrap upcoming, with tw,disc count, schedule 1 day
@@ -85,7 +85,8 @@ Move notes from private.md
 - [-] 5 roles (crypto dumbass, crypto nomad, crypto lost mmoney, crypto junkie, cryptographer)
 - [x] 5 commands (upcoming, recent, minting, twitter, whitelist)
 - [x] add tasks, task are commands in different dir
-- [ ] prepare discord first
+- [x] prepare discord first
+- [ ] upload to mainnet?
 - [ ] Test to team + jonny
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
 - [x] commands timeout and max number of us
@@ -98,19 +99,24 @@ Move notes from private.md
 - [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
 - [f] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
 
+## Levels
+
+- level2. memes
+- level3. twitter
+- level4. invites
+
 ## Discord
 
-- - [ ] add some discord channels, see ohm, concave etc. see next paragraph
-- - [ ] check category permissions: bot only have access to bot, check other roles, channels should be synced with category
-- clean up channels
-- announcer role, check code
+1. you appeared here and dont know what to do. Experiment!
+2. bot is the only way
+3. design dark souls
+1. You do not talk about CLUB.
+2. Obey rule 1.
+3. only share with whoom you trust
+- add some discord channels, see ohm, concave etc.
+- check category permissions: bot only have access to bot, check other roles, channels should be synced with category
 - b1z
-- faq
 - nft talk, defi talk, whitelists, twitter inf, discords
-- bot feedback, bugs, suggestions
-- arrow capital member
-- only share password with people you trust
-- change announcer member to mess
 
 ## Collections
 
