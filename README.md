@@ -70,6 +70,10 @@ Move notes from private.md
 - [x] multiple entry command
 - [ ] funny sublass
 - [ ] sublclass motivate
+- [ ] levelup, you gained new role `role`
+- [ ] test
+- [ ] discord message in channels
+- [ ] timeout commands
 - [ ] random nft
 - [x] cleanup reddit praw
 - [ ] ---

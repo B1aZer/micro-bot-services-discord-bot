@@ -1,35 +1,17 @@
 const data = require('../data/lv3.json')[0];
-const taskBase = require('../base/taskBase');
+const taskChannelBase = require('../base/taskChannelBase');
 
-class MotivationClass extends taskBase {
+class MotivationClass extends taskChannelBase {
     async checkIfErr(answer, interaction) {
         try {
             console.log(`checking user answer ${answer}`);
-            const messId = answer.split('/')[answer.split('/').length - 1];
-            const channel = await interaction.client.channels.fetch(process.env.MOTIVATION_CHANNEL_ID);
-            const message = await channel.messages.fetch(messId);
+            const message = await this.getMessageFrom(answer, interaction);
             if (message.author.id !== interaction.member.id) {
                 return `This is not yours message!`;
             }
-            /*
-            let content = message.content;
-            let attachments = message.attachments;
-          
-            if (content || attachments.size)
-               return false;
-            */
-            const reactions = message.reactions.cache;
-            const uniqueUserIds = new Map();
-            for (const [em, obj] of reactions) {
-                const users = await obj.users.fetch();
-                for (const [key, user] of users) {
-                    if (key !== message.author.id) {
-                        uniqueUserIds.set(key, user);
-                    }
-                }
-            }
-            console.log(`unique users of a message ${messId}: ${uniqueUserIds.size}, needed: ${this.reactionsNeeded}`);
-            if (uniqueUserIds.size >= (this.reactionsNeeded || 1)) {
+            const uniqueUserIds = await this.getUniqueReactionUsersFrom(message, message.author.id);
+            console.log(`unique users of a message ${message.id}: ${uniqueUserIds.size}, needed: ${this.reactionsNeeded}`);
+            if (uniqueUserIds.size >= this.reactionsNeeded) {
                 return false;
             }
             return `That's not a valid entry.`;
