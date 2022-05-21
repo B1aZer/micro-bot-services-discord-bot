@@ -28,7 +28,7 @@ module.exports = {
                     .setTitle(interaction.user.username)
                     .setDescription(`Level completed.
                         Tasks solved: ${inlineCode(numCompletedTasks)}
-                        Command unlocked: ${inlineCode(lvTasks[highestRoleIndex].commandUnlocked)}
+                        Unlocked: ${inlineCode(lvTasks[highestRoleIndex].unlocked)}
                         Coins received: ${inlineCode(lvTasks[highestRoleIndex].coins)}
                     `)
                     .setAuthor({ name: 'GooDeeBot', iconURL: 'https://i.imgur.com/8nB0tI0.jpg' })
