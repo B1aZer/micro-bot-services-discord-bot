@@ -64,10 +64,14 @@ Move notes from private.md
 - [x] log levelups
 - [ ] ---
 - [x] object.assign in tasks base class
-- [ ] add 2nd other tasks
-- [ ] add /meme command
+- [x] add 2nd other tasks
+- [x] add /meme command
 - [x] check bots commands only ephemeral
-- [ ] random nft + cleanup reddit praw
+- [x] multiple entry command
+- [ ] funny sublass
+- [ ] sublclass motivate
+- [ ] random nft
+- [x] cleanup reddit praw
 - [ ] ---
 - [x] remove <> from scripts, add in bot presentation
 - [ ] precentage green below floor price opensea monitor
@@ -106,10 +110,11 @@ Move notes from private.md
 
 ## Levels
 
-- level2. bot
-- level3. motivate 1 like
-- level4. culture 2 likes
-- level5. nft 5 likes?
+- level1. screener => bot with os monitor group
+- level2. funny , 5 images => /funny reward
+- level3. motivate, 1 like
+- level4. meme 3 likes
+- level5. culture 5 likes
 
 ## Discord
 

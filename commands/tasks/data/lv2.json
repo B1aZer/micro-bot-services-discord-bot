@@ -1,0 +1,10 @@
+[
+    {
+        "name": "funny",
+        "id": "lv2_funny",
+        "title": "Level 2 Task",
+        "description": "Submit 5 random funny images to <#977592788130619422>.\r\nCommand can be used multiple times.\r\nOne link per submition.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv2 funny <message_link>`",
+        "channelId": "LV2_FUNNY_CHANNEL_ID",
+        "submitionsAllowed": 1
+    }
+]
