@@ -8,6 +8,8 @@ module.exports = class TaskBase {
         this.loggerInfluencer = fs.createWriteStream(`/home/hipi/Sites/GooDee/_utils/out/tasks/${this.id}.log`, {
             flags: 'a'
         });
+        //defaults
+        this.submitionsAllowed = this.submitionsAllowed || 1;
     }
     async checkIfErr() {
         return false;
@@ -18,8 +20,15 @@ module.exports = class TaskBase {
         const user = (await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: interaction.user.id } })).data;
         const hasAnswers = answer && user?.tasks.some(task => task.id === this.id);
         if (hasAnswers) {
-            await interaction.reply({ content: 'You\'ve already submitted an answer. Try another task', ephemeral: true });
-            return;
+            const userAnswers = user.tasks.filter(task => task.id === this.id);
+            if (this.submitionsAllowed === 1) {
+                await interaction.reply({ content: 'You\'ve already submitted an answer. Try another task', ephemeral: true });
+                return;
+            }
+            if (this.submitionsAllowed > 1 && userAnswers.length >= this.submitionsAllowed) {
+                await interaction.reply({ content: 'You\'ve reached maximum number of sumbissions. Try another task', ephemeral: true });
+                return;
+            }
         }
         // dumb reply
         await interaction.deferReply({ ephemeral: true });
