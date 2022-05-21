@@ -1,15 +1,15 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const defaultCommandDescription = 'Run command without params to see the task description.';
-const lv2ComMotTask = require('./tasks/lv2/motivation');
-const lv2MotReactTask = require('./tasks/lv2/motivationReact');
+const lv3ComMotTask = require('./tasks/lv3/motivation');
+const lv3MotReactTask = require('./tasks/lv3/motivationReact');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('lv2')
+        .setName('lv3')
         .setDescription(defaultCommandDescription)
         .addSubcommand(subcommand =>
             subcommand
-                .setName(lv2ComMotTask.name)
+                .setName(lv3ComMotTask.name)
                 .setDescription(defaultCommandDescription)
                 .addStringOption(
                     option => option
@@ -17,7 +17,7 @@ module.exports = {
                         .setDescription('Message Link. Right Click => Copy Message Link')))
         .addSubcommand(subcommand =>
             subcommand
-                .setName(lv2MotReactTask.name)
+                .setName(lv3MotReactTask.name)
                 .setDescription(defaultCommandDescription)
                 .addStringOption(
                     option => option
@@ -27,11 +27,11 @@ module.exports = {
     async execute(interaction) {
         const subcommand = interaction.options.getSubcommand();
         switch (subcommand) {
-            case lv2ComMotTask.name:
-                await lv2ComMotTask.execute(interaction);
+            case lv3ComMotTask.name:
+                await lv3ComMotTask.execute(interaction);
                 break;
-            case lv2MotReactTask.name:
-                await lv2MotReactTask.execute(interaction);
+            case lv3MotReactTask.name:
+                await lv3MotReactTask.execute(interaction);
                 break;
             default:
             // code block

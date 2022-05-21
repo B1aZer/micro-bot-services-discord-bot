@@ -124,6 +124,11 @@ Move notes from private.md
 - b1z
 - nft talk, defi talk, whitelists, twitter inf, discords
 
+## Monitor
+
+- htop (mem)
+- ncdu (space)
+  
 ## Collections
 
 - https://twitter.com/AkumuDragonz
@@ -170,11 +175,11 @@ Calls first statemns with array as arg wo semicolon
 ```
 will only return first statement wo semicolon
 
-## Start
+## Startup
 
+- start database-mongo
+- start reddit-praw
 - start opensea-monitor
-- start mongo
-- start praw
 - start bot
 
 ## Bots

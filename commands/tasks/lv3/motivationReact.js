@@ -1,4 +1,4 @@
-const data = require('../data/lv2.json')[1];
+const data = require('../data/lv3.json')[1];
 const taskBase = require('../base/taskBase');
 
 class MotivationClass extends taskBase {
