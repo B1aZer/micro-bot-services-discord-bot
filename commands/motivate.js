@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const CommunityBase = require("./community/base/communityBase")
-const data = require("./community/data/community.json")[0]
-const motivateCommand = new CommunityBase(data)
+const CommunityBase = require("./community/base/communityBase");
+const data = require("./community/data/community.json")[1];
+const motivateCommand = new CommunityBase(data);
 
 module.exports = {
     cooldown: 10,
@@ -10,6 +10,6 @@ module.exports = {
         .setDescription(motivateCommand.description)
     ,
     async execute(interaction) {
-        await motivateCommand.execute(interaction)
+        await motivateCommand.execute(interaction);
     }
 }

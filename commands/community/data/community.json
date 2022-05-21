@@ -1,7 +1,22 @@
 [
     {
+        "name": "funny",
+        "description": "Show a funny image.",
+        "url": "/funny"
+    },
+    {
         "name": "motivate",
         "description": "Show a motivation image.",
         "url": "/motivate"
+    },
+    {
+        "name": "meme",
+        "description": "Show a meme image.",
+        "url": "/meme"
+    },
+    {
+        "name": "culture",
+        "description": "Show a culture image.",
+        "url": "/culture"
     }
 ]
