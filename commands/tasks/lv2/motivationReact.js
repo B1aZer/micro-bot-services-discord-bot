@@ -1,4 +1,4 @@
-const data = require('../data/lv2.json')[0];
+const data = require('../data/lv2.json')[1];
 const taskBase = require('../base/taskBase');
 
 class MotivationClass extends taskBase {
@@ -8,28 +8,21 @@ class MotivationClass extends taskBase {
             const messId = answer.split('/')[answer.split('/').length - 1];
             const channel = await interaction.client.channels.fetch(process.env.MOTIVATION_CHANNEL_ID);
             const message = await channel.messages.fetch(messId);
-            if (message.author.id !== interaction.member.id) {
-                return `This is not yours message!`;
+            if (message.author.id === interaction.member.id) {
+                return `This is yours message!`;
             }
-            /*
-            let content = message.content;
-            let attachments = message.attachments;
-          
-            if (content || attachments.size)
-               return false;
-            */
             const reactions = message.reactions.cache;
-            const uniqueUserIds = new Map();
+            let reactionsCount = 0;
             for (const [em, obj] of reactions) {
                 const users = await obj.users.fetch();
                 for (const [key, user] of users) {
-                    if (key !== message.author.id) {
-                        uniqueUserIds.set(key, user);
+                    if (key === interaction.member.id) {
+                        reactionsCount++;
                     }
                 }
             }
-            console.log(`unique users of a message ${messId}: ${uniqueUserIds.size}, needed: ${this.reactionsNeeded}`);
-            if (uniqueUserIds.size >= (this.reactionsNeeded || 1)) {
+            console.log(`user ${interaction.member.id} reacted to ${messId}: ${reactionsCount} times, needed: ${this.reactionsNeeded}`);
+            if (reactionsCount >= (this.reactionsNeeded || 1)) {
                 return false;
             }
             return `That's not a valid entry.`;

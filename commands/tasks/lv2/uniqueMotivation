@@ -1,0 +1,50 @@
+const data = require('../data/lv2.json')[1];
+const taskBase = require('../base/taskBase');
+const fs = require('fs');
+const axios = require('axios');
+//const browser = require('../../../../_utils/browser');
+
+class MotivationClass extends taskBase {
+    async checkIfErr(answer, interaction) {
+        try {
+            console.log(`checking user answer ${answer}`);
+            const messId = answer.split('/')[answer.split('/').length - 1];
+            const channel = await interaction.client.channels.fetch(process.env.MOTIVATION_CHANNEL_ID);
+            const message = await channel.messages.fetch(messId);
+            if (message.author.id !== interaction.member.id) {
+                return `This is not yours message!`;
+            }
+            /*
+            let content = message.content;
+            let attachments = message.attachments;
+            if (content || attachments.size)
+                return false;
+                */
+            const attachment = message.attachments.first();
+            //fs.writeFileSync(`./${attachment.name}`, attachment.file);
+            const resp = await axios({
+                method: 'GET',
+                url: attachment.url,
+                responseType: 'stream',
+            });
+            resp.data.pipe(fs.createWriteStream(`./${attachment.name}`));
+            /*
+            const browser = require('../_utils/browser');
+            await browser.page.goto('https://tineye.com/', {
+                waitUntil: 'networkidle0',
+            });
+            await browser.page.waitForNetworkIdle();
+            
+            const elementHandle = await browser.page.$("#upload_box");
+            await elementHandle.uploadFile('./1.jpg');
+            await browser.page.click('#file_submit');  // might not be necessary
+            */
+            return `That's not a valid.`;
+        } catch (err) {
+            console.log(err);
+            return `That's not a valid Message Link.`;
+        }
+    }
+}
+
+module.exports = new MotivationClass(data);

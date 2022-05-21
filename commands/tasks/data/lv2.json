@@ -3,14 +3,16 @@
         "name": "motivation",
         "id": "lv2_motivation",
         "title": "Level 2 Task",
-        "description": "Submit random motivational image or phrase to <#${'974170580653854770'}>.\r\nSubmit your answer in following form:\r\n\r\n`/lv2 motivation <message_id>`",
-        "channelId": "LV2_MOTIVATION_CHANNEL_ID"
+        "description": "Submit random motivational image or phrase to <#974170580653854770>.\r\nIt should have at least one reaction from another member.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv2 motivation <message_link>`",
+        "channelId": "LV2_MOTIVATION_CHANNEL_ID",
+        "reactionsNeeded": 1
     },
     {
-        "name": "nft_look",
-        "id": "lv1_nft_look",
-        "title": "Level 1 Task",
-        "description": "Name most visually appeling for you NFT project.\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_look <project_name>`",
-        "channelId": "LV1_NFT_LOOK_CHANNEL_ID"
+        "name": "motivation_react",
+        "id": "lv2_motivation_react",
+        "title": "Level 2 Task",
+        "description": "React to at least one motivational message in <#974170580653854770>.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv2 motivation_react <message_link>`",
+        "channelId": "LV2_MOTIVATION_REACT_CHANNEL_ID",
+        "reactionsNeeded": 1
     }
 ]

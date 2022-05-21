@@ -52,10 +52,11 @@ Move notes from private.md
 - [x] add bot price in description
 - [x] send discord embed for coins in log channel
 - [x] buy command
-- [ ] bot reward as lv2
+- [x] bot reward as lv2
 - [x] twitter check
 - [x] brwowser util
 - [ ] check commands access levels
+- [ ] mainnet?
 - [ ] ---
 - [x] refactor levelup levels, commands, rank command num of commands
 - [x] levelup json
@@ -135,6 +136,7 @@ Move notes from private.md
 
 - any good NFT project has You might like projects on the side
 - ai to find projects?
+- discord emoji and stickers
 
 ## hardcoded
 
@@ -458,7 +460,8 @@ dmitrii.branitskii4
 
 #### Resources
 
-- [ ]effective nft launch (https://www.paradigm.xyz/2021/10/a-guide-to-designing-effective-nft-launches)
+- [ ] vstudio code vim completion https://github.com/neoclide/coc.nvim
+- [ ] effective nft launch (https://www.paradigm.xyz/2021/10/a-guide-to-designing-effective-nft-launches)
 - [ ] mongodb Sam google account
 - [ ] [discord python add to server with api](https://dev.to/dandev95/add-a-user-to-a-guild-with-discord-oauth2-in-python-using-requests-595f)
 - [ ] jqery template Defining a HTML template to append using JQuery (https://stackoverflow.com/questions/18673860/defining-a-html-template-to-append-using-jquery)
