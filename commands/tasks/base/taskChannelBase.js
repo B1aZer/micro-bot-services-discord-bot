@@ -4,6 +4,9 @@ module.exports = class TaskChannelBase extends TaskBase {
     constructor(params) {
         super(params);
         this.reactionsNeeded = this.reactionsNeeded || 0;
+        if (!this.channelEntryId) {
+            throw new Error('Provide channel to look answer in (channelEntryId in JSON)');
+        }
     }
     getContent() {
         /*
