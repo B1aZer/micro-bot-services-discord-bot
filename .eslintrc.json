@@ -9,6 +9,8 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-        "semi": [1, "always"]
+        // 1 warning, 2 error
+        "semi": [1, "always"],
+        "no-unused-vars": [1]
     }
 }
