@@ -21,8 +21,13 @@ module.exports = class TaskBase {
         const hasAnswers = answer && user?.tasks.some(task => task.id === this.id);
         if (hasAnswers) {
             const userAnswers = user.tasks.filter(task => task.id === this.id);
+            const sameAnswer = user.tasks.some(task => task.answer === answer);
             if (this.submitionsAllowed === 1) {
                 await interaction.reply({ content: 'You\'ve already submitted an answer. Try another task', ephemeral: true });
+                return;
+            }
+            if (this.submitionsAllowed > 1 && userAnswers.length < this.submitionsAllowed && sameAnswer) {
+                await interaction.reply({ content: 'You\'ve already submited this answer!', ephemeral: true });
                 return;
             }
             if (this.submitionsAllowed > 1 && userAnswers.length >= this.submitionsAllowed) {
