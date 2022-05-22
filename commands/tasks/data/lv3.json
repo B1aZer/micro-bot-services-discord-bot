@@ -5,7 +5,8 @@
         "title": "Level 3 Task",
         "description": "Submit random motivational image or phrase to <#974170580653854770>.\r\nIt should have at least one reaction from another member.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv3 motivation <message_link>`",
         "channelId": "LV3_MOTIVATION_CHANNEL_ID",
-        "reactionsNeeded": 1
+        "reactionsNeeded": 1,
+        "channelEntryId": "MOTIVATION_CHANNEL_ID"
     },
     {
         "name": "motivation_react",
@@ -13,6 +14,7 @@
         "title": "Level 3 Task",
         "description": "React to at least one motivational message in <#974170580653854770>.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv3 motivation_react <message_link>`",
         "channelId": "LV3_MOTIVATION_REACT_CHANNEL_ID",
-        "reactionsNeeded": 1
+        "reactionsNeeded": 1,
+        "channelEntryId": "MOTIVATION_CHANNEL_ID"
     }
 ]
