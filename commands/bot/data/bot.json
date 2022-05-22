@@ -13,7 +13,7 @@
         "title": "Recently Added Collections",
         "coins": 10,
         "path": "./logs/opensea-recent-collections",
-        "count" : 25
+        "count" : 10
     },
     {
         "name": "trending",
@@ -21,7 +21,7 @@
         "title": "Trending Twitter Accounts",
         "coins": 10,
         "path": "./logs/following_logs",
-        "count" : 25
+        "count" : 10
     },
     {
         "name": "upcoming",
@@ -29,7 +29,7 @@
         "title": "Upcoming NFT Projects",
         "coins": 10,
         "path": "./logs/rare_scraper_logs",
-        "count" : 25
+        "count" : 10
     },
     {
         "name": "whitelists",
@@ -37,6 +37,6 @@
         "title": "Collections Whitelists",
         "coins": 10,
         "path": "./logs/upcoming-whitelists",
-        "count" : 25
+        "count" : 10
     }
 ]
