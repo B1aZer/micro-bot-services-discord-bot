@@ -7,7 +7,7 @@ class MotivationClass extends taskChannelBase {
             console.log(`checking user answer ${answer}`);
             const message = await this.getMessageFrom(answer, interaction);
             if (message.author.id !== interaction.member.id) {
-                return `This is not yours message!`;
+                return `This is not your message!`;
             }
             const uniqueUserIds = await this.getUniqueReactionUsersFrom(message, message.author.id);
             console.log(`unique users of a message ${message.id}: ${uniqueUserIds.size}, needed: ${this.reactionsNeeded}`);

@@ -7,7 +7,7 @@ class MotivationClass extends taskBase {
             console.log(`checking user answer ${answer}`);
             const message = await this.getMessageFrom(answer, interaction);
             if (message.author.id === interaction.member.id) {
-                return `This is yours message!`;
+                return `This is your message!`;
             }
             const reactionsCount = await this.getReactionsNumberFor(message, interaction.member.id);
             console.log(`user ${interaction.member.id} reacted to ${message.id}: ${reactionsCount} times, needed: ${this.reactionsNeeded}`);

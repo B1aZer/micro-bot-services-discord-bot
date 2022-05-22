@@ -75,6 +75,9 @@ Move notes from private.md
 - [ ] test
 - [ ] discord message in channels
 - [ ] timeout commands
+- [ ] check task command permissions/levels
+- [ ] check bot commands permissions
+- [ ] check community commands permissions
 - [ ] random nft
 - [x] cleanup reddit praw
 - [ ] ---

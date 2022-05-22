@@ -54,7 +54,7 @@ module.exports = class TaskChannelBase extends TaskBase {
             console.log(`checking user answer ${answer}`);
             const message = await this.getMessageFrom(answer, interaction);
             if (message.author.id !== interaction.member.id) {
-                return `This is not yours message!`;
+                return `This is not your message!`;
             }
             return false;
         } catch (err) {
