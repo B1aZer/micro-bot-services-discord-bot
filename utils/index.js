@@ -16,18 +16,19 @@ module.exports = {
             console.log(`No user ${interaction.member.id} in DB to levelUP`);
             return;
         }
-        // TODO: Overall tasks not for level
-        const numCompletedTasks = userDB.tasks?.length;
-        const numRequiredTasks = lvTasks[highestRoleIndex]?.tasks.length;
-        if (numCompletedTasks === numRequiredTasks &&
+        const numCompletedTasksForLevel = userDB.tasks?.filter(task => task.id.startsWith(`lv${highestRoleIndex}`));
+        const numRequiredTasks = lvTasks[highestRoleIndex]?.tasksNum;
+        if (numCompletedTasksForLevel === numRequiredTasks &&
             highestRoleIndex + 1 <= [...allRoles].length - 1) {
             const nextRole = [...allRoles][highestRoleIndex + 1][1];
             if (!interaction.member.roles.cache.some(role => role.name === nextRole.name)) {
                 const embed = new Discord.MessageEmbed()
                     .setColor(process.env.DISCORD_EMBED_COLOR)
                     .setTitle(interaction.user.username)
-                    .setDescription(`Level completed.
-                        Tasks solved: ${inlineCode(numCompletedTasks)}
+                    .setDescription(`Level completed!
+
+                        You've gained new role - \`${ nextRole.name }\`
+                        Tasks solved: ${inlineCode(numCompletedTasksForLevel)}
                         Unlocked: ${inlineCode(lvTasks[highestRoleIndex].unlocked)}
                         Coins received: ${inlineCode(lvTasks[highestRoleIndex].coins)}
                     `)
@@ -43,7 +44,7 @@ module.exports = {
                 // role
                 interaction.member.roles.add(nextRole);
                 // log
-                console.log(`user ${interaction.member.id} levelup'd to ${nextRole.name} with ${numCompletedTasks} tasks and ${highestRoleIndex} role`);
+                console.log(`user ${interaction.member.id} levelup'd to ${nextRole.name} with ${numCompletedTasksForLevel} tasks and ${highestRoleIndex} role`);
             }
         }
     },
