@@ -16,7 +16,7 @@ module.exports = {
             console.log(`No user ${interaction.member.id} in DB to levelUP`);
             return;
         }
-        const numCompletedTasksForLevel = userDB.tasks?.filter(task => task.id.startsWith(`lv${highestRoleIndex}`));
+        const numCompletedTasksForLevel = userDB.tasks?.filter(task => task.id.startsWith(`lv${highestRoleIndex}`)).length;
         const numRequiredTasks = lvTasks[highestRoleIndex]?.tasksNum;
         if (numCompletedTasksForLevel === numRequiredTasks &&
             highestRoleIndex + 1 <= [...allRoles].length - 1) {
@@ -25,6 +25,7 @@ module.exports = {
                 const embed = new Discord.MessageEmbed()
                     .setColor(process.env.DISCORD_EMBED_COLOR)
                     .setTitle(interaction.user.username)
+                    .setThumbnail(interaction.user.displayAvatarURL())
                     .setDescription(`Level completed!
 
                         You've gained new role - \`${ nextRole.name }\`

@@ -70,7 +70,7 @@ Move notes from private.md
 - [x] multiple entry command
 - [x] funny sublass
 - [x] sublclass motivate
-- [ ] do not submit same message
+- [x] do not submit same message
 - [ ] levelup, you gained new role `role`
 - [ ] test
 - [ ] discord message in channels
@@ -105,6 +105,7 @@ Move notes from private.md
 - [ ] Market, market paper, give pass, possibly give coins as part of promotion
 - [x] commands timeout and max number of us
 - [x] randomize whitelists (in command)
+- [ ] ??
 - [ ] Cron for some reason sends message on second try, remove ntf error to file
 - [ ] setColor to dotenv
 - [ ] praw,scraper have secrets in code, search secret, move dotenv
@@ -115,11 +116,11 @@ Move notes from private.md
 
 ## Levels
 
-- level1. screener => bot with os monitor group
-- level2. funny , 5 images => /funny reward
-- level3. motivate, 1 like
-- level4. meme 3 likes
-- level5. culture 5 likes
+- dummy level1. screener => bot with os monitor group
+- newcomer level2. funny , 5 images => /funny reward
+- first timer level3. motivate, 1 like => motivate
+- newbie level4. meme 3 likes => meme
+- noob level5. culture 5 likes => culture
 
 ## Discord
 

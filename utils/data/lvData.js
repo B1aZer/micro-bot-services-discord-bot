@@ -14,7 +14,7 @@ module.exports = {
     },
     2: {
         tasksNum: reduceTasks(lv2Tasks),
-        unlocked: '/motivate command',
+        unlocked: '/funny command',
         coins: 100,
     },
 }
