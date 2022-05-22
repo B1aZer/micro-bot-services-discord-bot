@@ -1,0 +1,21 @@
+[
+    {
+        "name": "memes",
+        "id": "lv4_memes",
+        "title": "Level 4 Task",
+        "description": "Submit random meme image to <#977772192827863080>.\r\nIt should have at least 3 reactions from another members.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv4 memes <message_link>`",
+        "channelId": "LV4_MEMES_CHANNEL_ID",
+        "reactionsNeeded": 3,
+        "channelEntryId": "MEMES_CHANNEL_ID"
+    },
+    {
+        "name": "memes_react",
+        "id": "lv4_memes_react",
+        "title": "Level 4 Task",
+        "description": "React to at least three meme messages in <#977772192827863080>.\r\nCommand can be used multiple times.\r\nOne link per submition.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv4 memes_react <message_link>`",
+        "channelId": "LV4_MEMES_REACT_CHANNEL_ID",
+        "reactionsNeeded": 1,
+        "submitionsAllowed": 3,
+        "channelEntryId": "MEMES_CHANNEL_ID"
+    }
+]

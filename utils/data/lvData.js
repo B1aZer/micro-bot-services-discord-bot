@@ -1,6 +1,8 @@
 const lv1Tasks = require('../../commands/tasks/data/lv1.json');
 const lv2Tasks = require('../../commands/tasks/data/lv2.json');
 const lv3Tasks = require('../../commands/tasks/data/lv3.json');
+const lv4Tasks = require('../../commands/tasks/data/lv4.json');
+const lv5Tasks = require('../../commands/tasks/data/lv5.json');
 
 function reduceTasks(tasks) {
     return tasks.reduce((prev, curr) => prev + (curr.submitionsAllowed || 1), 0);
@@ -21,6 +23,16 @@ module.exports = {
     3: {
         tasksNum: reduceTasks(lv3Tasks),
         unlocked: '/motivate command',
+        coins: 100,
+    },
+    4: {
+        tasksNum: reduceTasks(lv4Tasks),
+        unlocked: '/meme command',
+        coins: 100,
+    },
+    5: {
+        tasksNum: reduceTasks(lv5Tasks),
+        unlocked: '/culture command',
         coins: 100,
     },
 }
