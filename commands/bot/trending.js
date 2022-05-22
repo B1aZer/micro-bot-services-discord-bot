@@ -6,7 +6,7 @@ class TrendingBot extends BotBase {
     formatField(elements) {
         return `
         Followers: ${inlineCode(elements[2])}
-        Created: ${time(new Date(elements[1].trim()))}
+        Created: ${time(new Date(elements[1]?.trim()))}
         ${hyperlink('https://twitter.com/' + elements[0])}
         `
     }

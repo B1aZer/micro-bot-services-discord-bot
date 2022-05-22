@@ -68,8 +68,9 @@ Move notes from private.md
 - [x] add /meme command
 - [x] check bots commands only ephemeral
 - [x] multiple entry command
-- [ ] funny sublass
-- [ ] sublclass motivate
+- [x] funny sublass
+- [x] sublclass motivate
+- [ ] do not submit same message
 - [ ] levelup, you gained new role `role`
 - [ ] test
 - [ ] discord message in channels
@@ -145,6 +146,7 @@ Move notes from private.md
 - https://twitter.com/VinceniaNft
 - https://twitter.com/TrippinApeNFT
 - https://twitter.com/TrippyKidzNFT
+- https://twitter.com/oakparadisenft
 
 ## BOT ideas
 

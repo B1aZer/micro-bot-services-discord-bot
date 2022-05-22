@@ -10,6 +10,12 @@ module.exports = class BotBase {
     getSliced(log) {
         return (log.split('\n').slice(0, this.count))
     }
+    validateElements(items) {
+        if (!items[0]?.trim()) {
+            items[0] = 'noname';
+        }
+        return items;
+    }
     // override
     formatField(elements) {
         return `${elements[0]}`;
@@ -37,8 +43,10 @@ module.exports = class BotBase {
             .setAuthor({ name: 'GooDeeBot', iconURL: 'https://i.imgur.com/8nB0tI0.jpg' })
             .setTimestamp()
         for (let i = 0; i < top10.length; i++) {
-            const elements = top10[i].split(this.separator);
-            elements[0] && embed.addField(elements[0], this.formatField(elements))
+            console.log(`create fields for ${top10[i].split(this.separator)[0]}: ${top10[i].split(this.separator)}`);
+            const elements = this.validateElements(top10[i].split(this.separator));
+            console.log(`validated: ${elements[0]} ${elements}`);
+            embed.addField(elements[0], this.formatField(elements))
         }
         await interaction.editReply({ embeds: [embed] })
     }
