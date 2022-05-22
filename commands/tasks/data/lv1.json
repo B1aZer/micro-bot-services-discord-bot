@@ -3,35 +3,35 @@
         "name": "influencer",
         "id": "lv1_influencer",
         "title": "Level 1 Task",
-        "description": "Name most influental twitter account in NFT space.\r\nSubmit your answer in following form:\r\n\r\n`/lv1 influencer <twitter_screen_name>`",
+        "description": "Name most influental twitter account in NFT space.\r\n\r\nSubmit your answer in following form:\r\n\r\n`/lv1 influencer <twitter_screen_name>`",
         "channelId": "LV1_INFLUENCER_CHANNEL_ID"
     },
     {
         "name": "nft_look",
         "id": "lv1_nft_look",
         "title": "Level 1 Task",
-        "description": "Name most visually appeling for you NFT project.\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_look <project_name>`",
+        "description": "Name most visually appeling NFT project.\r\n\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_look <project_name>`",
         "channelId": "LV1_NFT_LOOK_CHANNEL_ID"
     },
     {
         "name": "nft_buy",
         "id": "lv1_nft_buy",
         "title": "Level 1 Task",
-        "description": "Having infinite money what NFT project you would buy?\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_buy <project_name>`",
+        "description": "Having infinite money what NFT project would you buy?\r\n\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_buy <project_name>`",
         "channelId": "LV1_NFT_BUY_CHANNEL_ID"
     },
     {
         "name": "nft_discord",
         "id": "lv1_nft_discord",
         "title": "Level 1 Task",
-        "description": "Name discord NFT server you like hang out in?\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_discord <server_name>`",
+        "description": "Name discord NFT server you like hang out in.\r\n\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_discord <server_name>`",
         "channelId": "LV1_NFT_DISCORD_CHANNEL_ID"
     },
     {
         "name": "nft_await",
         "id": "lv1_nft_await",
         "title": "Level 1 Task",
-        "description": "What upcoming NFT project you most looking forward to?\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_await <project_name>`",
+        "description": "What upcoming NFT project are you most looking forward to?\r\n\r\nSubmit your answer in following form:\r\n\r\n`/lv1 nft_await <project_name>`",
         "channelId": "LV1_NFT_AWAIT_CHANNEL_ID"
     }
 ]

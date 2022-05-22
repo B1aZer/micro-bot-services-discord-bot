@@ -56,7 +56,7 @@ Move notes from private.md
 - [x] twitter check
 - [x] brwowser util
 - [x] check commands access levels
-- [ ] mainnet?
+- [x] mainnet?
 - [ ] ---
 - [x] refactor levelup levels, commands, rank command num of commands
 - [x] levelup json
@@ -73,6 +73,7 @@ Move notes from private.md
 - [x] do not submit same message
 - [x] levelup, you gained new role `role`
 - [x] test
+- [ ] 0xaA321A715e08eF44EeE8CadB1282688D9dc683cf
 - [ ] test from 0
 - [ ] discord message in channels
 - [ ] timeout commands
