@@ -29,7 +29,6 @@ module.exports = {
 			.setDescription(`
 			${bold('Level')}: ${highestRole.rawPosition}
 			${bold('Role')}: ${highestRole.name}
-			${bold('Commands')}: 0
 			${bold('Coins')}: ${userDB.coins}
 			`)
 			.setTimestamp()
