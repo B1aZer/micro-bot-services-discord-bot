@@ -55,7 +55,7 @@ Move notes from private.md
 - [x] bot reward as lv2
 - [x] twitter check
 - [x] brwowser util
-- [ ] check commands access levels
+- [x] check commands access levels
 - [ ] mainnet?
 - [ ] ---
 - [x] refactor levelup levels, commands, rank command num of commands
@@ -71,17 +71,19 @@ Move notes from private.md
 - [x] funny sublass
 - [x] sublclass motivate
 - [x] do not submit same message
-- [ ] levelup, you gained new role `role`
-- [ ] test
+- [x] levelup, you gained new role `role`
+- [x] test
+- [ ] test from 0
 - [ ] discord message in channels
 - [ ] timeout commands
-- [ ] check task command permissions/levels
+- [x] check task command permissions/levels
 - [ ] check bot commands permissions
-- [ ] check community commands permissions
+- [x] check community commands permissions
 - [ ] random nft
 - [x] cleanup reddit praw
 - [ ] ---
 - [x] remove <> from scripts, add in bot presentation
+- [ ] reactionsNeeded is not needed for react task
 - [ ] precentage green below floor price opensea monitor
 - [ ] opensea monitor, push to queue with max 5 times
 - [x] log all sensitive data, start should all log to log
