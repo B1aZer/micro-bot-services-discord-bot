@@ -3,7 +3,7 @@
         "name": "culture",
         "id": "lv5_culture",
         "title": "Level 5 Task",
-        "description": "Submit random culture image to <#977772369420640316>.\r\nIt should have at least 5 reactions from another members.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv5 culture <message_link>`",
+        "description": "Submit random culture image to <#977772369420640316>.\r\nIt should have at least 5 reactions from another members.\r\n\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv5 culture <message_link>`",
         "channelId": "LV5_CULTURE_CHANNEL_ID",
         "reactionsNeeded": 5,
         "channelEntryId": "CULTURE_CHANNEL_ID"
@@ -12,7 +12,7 @@
         "name": "culture_react",
         "id": "lv5_culture_react",
         "title": "Level 5 Task",
-        "description": "React to at least five meme messages in <#977772369420640316>.\r\nCommand can be used multiple times.\r\nOne link per submition.\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv5 culture_react <message_link>`",
+        "description": "React to at least five meme messages in <#977772369420640316>.\r\nCommand can be used multiple times.\r\nOne link per submition.\r\n\r\nSubmit your answer (copy link of the message) in following form:\r\n\r\n`/lv5 culture_react <message_link>`",
         "channelId": "LV5_CULTURE_REACT_CHANNEL_ID",
         "reactionsNeeded": 1,
         "submitionsAllowed": 5,
