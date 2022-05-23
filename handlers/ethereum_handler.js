@@ -114,7 +114,7 @@ const abi = [
 
 module.exports = (client) => {
     //localhost:8545
-    const provider = new ethers.providers.JsonRpcProvider(process.env.RINKEBY_API_URL);
+    const provider = new ethers.providers.JsonRpcProvider(process.env.MAINNET_API_URL);
     const gooDeeContract = new ethers.Contract(contractAddress, abi, provider);
     // Receive an event when ANY transfer occurs
     gooDeeContract.on("buyCoinsEvent", async (from, discordID, amount, event) => {
