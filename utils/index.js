@@ -17,10 +17,13 @@ module.exports = {
             return;
         }
         const numCompletedTasksForLevel = userDB.tasks?.filter(task => task.id.startsWith(`lv${highestRoleIndex}`)).length;
+        console.log(`completed tasks for user ${interaction.member.id}: ${ numCompletedTasksForLevel }`);
         const numRequiredTasks = lvTasks[highestRoleIndex]?.tasksNum;
+        console.log(`required tasks for user ${interaction.member.id}: ${ numCompletedTasksForLevel }`);
         if (numCompletedTasksForLevel === numRequiredTasks &&
             highestRoleIndex + 1 <= [...allRoles].length - 1) {
             const nextRole = [...allRoles][highestRoleIndex + 1][1];
+            console.log(`next role is ${nextRole.name}`);
             if (!interaction.member.roles.cache.some(role => role.name === nextRole.name)) {
                 const embed = new Discord.MessageEmbed()
                     .setColor(process.env.DISCORD_EMBED_COLOR)
