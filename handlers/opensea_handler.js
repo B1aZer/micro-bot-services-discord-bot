@@ -3,6 +3,9 @@ const Discord = require("discord.js");
 
 module.exports = (client) => {
     const ws = new WebSocket('ws://localhost:3080');
+    ws.on('error', (error) => {
+        console.log(error);
+    });
     ws.on('message', function message(jsonData) {
         try {
             const data = JSON.parse(jsonData);
