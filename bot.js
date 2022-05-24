@@ -1,4 +1,5 @@
 require('dotenv').config();
+process.on("unhandledRejection", error => console.error("Promise rejection:", error));
 const Discord = require("discord.js");
 // partials for DM and reactions real time cache
 const client = new Discord.Client(
