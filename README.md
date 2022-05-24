@@ -10,15 +10,32 @@ Move notes from private.md
 
 ## Now
 
-- [ ] 0.185 b1z, 0.081 
-- [ ] 3.905 / 2 = 1.9525 
-- [ ] 2.16402 + 1.9525 = 4.11652
-- [ ] 4.11652 - 0.185 - 0.081 - 1 = 2.85052
-- [ ] 2.85052 / 5 = 0.570104
-- [ ] mine = 0.570104 + 0.185 = 0.755104 + 2.3 = 3
-- [ ] pciky = 0.570104 + 0.081 = 0.651104
-- [x] screener, lvlup, 
 - [ ] test from everyone perspective up
+- [ ] warning wallet not connected
+- [ ] warning not eff funds
+- [-] 50 coins per level
+- [x] discord message in channels
+- [x] discord right panel roles
+- [x] send all eth back
+- [ ] timeout commands
+- [x] check task command permissions/levels
+- [ ] check bot commands permissions
+- [x] check community commands permissions
+- [-] random nft
+- [ ] wtf with coins at right click command rank?
+- [ ] start marketing discord/ twitter
+- [ ] reactionsNeeded is not needed for react task
+- [ ] precentage green below floor price opensea monitor
+- [ ] twiiter / discord invite levels
+- [ ] opensea monitor, push to queue with max 5 times
+- [ ] Market, market paper, give pass, possibly give coins as part of promotion
+- [ ] ??
+- [ ] Cron for some reason sends message on second try, remove ntf error to file
+- [ ] setColor to dotenv
+- [ ] praw,scraper have secrets in code, search secret, move dotenv
+- [ ] Finish landing. Alternate enter method
+- [x] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
+- [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
 - [x] replace | with |||, remove unicode from name in logs?
 - [x] refactor bot tasks, make base calss and extend, w o wo json
 - [x] fix motivate
@@ -57,12 +74,12 @@ Move notes from private.md
 - [x] brwowser util
 - [x] check commands access levels
 - [x] mainnet?
-- [ ] ---
+- [x] ---
 - [x] refactor levelup levels, commands, rank command num of commands
 - [x] levelup json
 - [x] coins in levelup are static
 - [x] log levelups
-- [ ] ---
+- [x] ---
 - [x] object.assign in tasks base class
 - [x] add 2nd other tasks
 - [x] add /meme command
@@ -73,20 +90,12 @@ Move notes from private.md
 - [x] do not submit same message
 - [x] levelup, you gained new role `role`
 - [x] test
-- [ ] 0xaA321A715e08eF44EeE8CadB1282688D9dc683cf
-- [ ] test from 0
-- [ ] discord message in channels
-- [ ] timeout commands
-- [x] check task command permissions/levels
-- [ ] check bot commands permissions
-- [x] check community commands permissions
-- [ ] random nft
+- [x] 0xaA321A715e08eF44EeE8CadB1282688D9dc683cf
+- [x] test from 0
+- [f] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
 - [x] cleanup reddit praw
-- [ ] ---
+- [x] ---
 - [x] remove <> from scripts, add in bot presentation
-- [ ] reactionsNeeded is not needed for react task
-- [ ] precentage green below floor price opensea monitor
-- [ ] opensea monitor, push to queue with max 5 times
 - [x] log all sensitive data, start should all log to log
 - [+] each role gives 100 coins + see whatsup (levels(new channels), new tasks (quests), command drop (free), coins drop)
 - [x] Finish etherscan scraper, write file, schedule 1h
@@ -106,19 +115,18 @@ Move notes from private.md
 - [x] 5 commands (upcoming, recent, minting, twitter, whitelist)
 - [x] add tasks, task are commands in different dir
 - [x] prepare discord first
-- [ ] upload to mainnet?
-- [ ] Test to team + jonny
-- [ ] Market, market paper, give pass, possibly give coins as part of promotion
+- [x] upload to mainnet?
+- [x] Test to team + jonny
 - [x] commands timeout and max number of us
 - [x] randomize whitelists (in command)
-- [ ] ??
-- [ ] Cron for some reason sends message on second try, remove ntf error to file
-- [ ] setColor to dotenv
-- [ ] praw,scraper have secrets in code, search secret, move dotenv
-- [ ] Finish landing. Alternate enter method
-- [x] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
-- [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
-- [f] https://stackoverflow.com/questions/72048570/403-error-when-setting-application-command-permissions-on-discord
+- [x] 0.185 b1z, 0.081 
+- [x] 3.905 / 2 = 1.9525 
+- [x] 2.16402 + 1.9525 = 4.11652
+- [x] 4.11652 - 0.185 - 0.081 - 1 = 2.85052
+- [x] 2.85052 / 5 = 0.570104
+- [x] mine = 0.570104 + 0.185 = 0.755104 + 2.3 = 3
+- [x] pciky = 0.570104 + 0.081 = 0.651104 387259264034668545
+- [x] screener, lvlup, 
 
 ## Levels
 
@@ -160,6 +168,8 @@ Move notes from private.md
 - any good NFT project has You might like projects on the side
 - ai to find projects?
 - discord emoji and stickers
+- imgur images
+- tumblr
 
 ## hardcoded
 
