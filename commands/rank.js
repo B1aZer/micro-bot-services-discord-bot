@@ -4,6 +4,7 @@ const Discord = require("discord.js");
 const axios = require('axios');
 
 module.exports = {
+	cooldown: 10,
 	data: new SlashCommandBuilder()
 		.setName('rank')
 		.setDescription('Shows user rank.')
@@ -19,9 +20,9 @@ module.exports = {
 		const user = interaction.options.getUser('target')
 			|| interaction.options.getUser('user')
 			|| interaction.user;
-		const userDB = (await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: interaction.user.id } })).data
-		const member = await interaction.guild.members.fetch(user.id)
-		const highestRole = member.roles.cache.sort((a, b) => b.rawPosition - a.rawPosition).first()
+		const userDB = (await axios.get(`${process.env.MONGODB_URL}/user`, { params: { userID: user.id } })).data;
+		const member = await interaction.guild.members.fetch(user.id);
+		const highestRole = member.roles.cache.sort((a, b) => b.rawPosition - a.rawPosition).first();
 		const embed = new Discord.MessageEmbed()
 			.setColor("#00936f")
 			.setTitle(user.username)
