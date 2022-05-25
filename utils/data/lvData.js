@@ -13,26 +13,26 @@ module.exports = {
     1: {
         tasksNum: reduceTasks(lv1Tasks),
         unlocked: 'Bot group',
-        coins: 50,
+        coins: 100,
     },
     2: {
         tasksNum: reduceTasks(lv2Tasks),
         unlocked: '/funny command',
-        coins: 50,
+        coins: 100,
     },
     3: {
         tasksNum: reduceTasks(lv3Tasks),
         unlocked: '/motivate command',
-        coins: 50,
+        coins: 100,
     },
     4: {
         tasksNum: reduceTasks(lv4Tasks),
         unlocked: '/meme command',
-        coins: 50,
+        coins: 100,
     },
     5: {
         tasksNum: reduceTasks(lv5Tasks),
         unlocked: '/culture command',
-        coins: 50,
+        coins: 100,
     },
 }

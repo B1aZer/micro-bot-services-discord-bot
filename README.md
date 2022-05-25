@@ -8,21 +8,33 @@ Move notes from private.md
 - [ ] Test launch 20 May
 - [ ] Launch 30 May
 
+## Auth
+
+- [ ] linktree - goodeefinance
+- [ ] ThisIsNotATest - pdf to server
+
 ## Now
 
 - [ ] test from everyone perspective up
-- [ ] warning wallet not connected
-- [ ] warning not eff funds
-- [-] 50 coins per level
+- [ ] fix faq => check stable => nice discord meesage with freebie => market in servers
+- [ ] lv6 follow, like, retweet
+- [ ] lv7 10 invites
+- [ ] 1000 followers
+- [ ] bice twiiter meesage  ws freebie
+- [ ] save to log all user servers
+- [ ] twiiter disc link, wp pass
+- [x] warning wallet not connected
+- [x] warning not eff funds
+- [x] 50 coins per level
 - [x] discord message in channels
 - [x] discord right panel roles
 - [x] send all eth back
-- [ ] timeout commands
+- [x] timeout commands
 - [x] check task command permissions/levels
-- [ ] check bot commands permissions
+- [x] check bot commands permissions
 - [x] check community commands permissions
 - [-] random nft
-- [ ] wtf with coins at right click command rank?
+- [x] wtf with coins at right click command rank?
 - [ ] start marketing discord/ twitter
 - [ ] reactionsNeeded is not needed for react task
 - [ ] precentage green below floor price opensea monitor
@@ -165,6 +177,7 @@ Move notes from private.md
 
 ## BOT ideas
 
+- news
 - any good NFT project has You might like projects on the side
 - ai to find projects?
 - discord emoji and stickers
