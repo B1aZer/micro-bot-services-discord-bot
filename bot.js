@@ -1,9 +1,10 @@
 require('dotenv').config();
-const { transporter, mailOptions } = require('./mail');
+const { transporter, mailOptions } = require('../_utils/mail.js');
 process.on("unhandledRejection", error => console.error("Promise rejection:", error));
 process.on('uncaughtException', err => {
   console.log('There was an uncaught error', err);
   // send mail with defined transport object
+  mailOptions.subject = '✖ Discord Bot Has Crashed ✖';
   mailOptions.text = err;
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {

@@ -20,7 +20,5 @@
     "nodemon": "^2.0.15",
     "ws": "^8.6.0"
   },
-  "dependencies": {
-    "nodemailer": "^6.7.5"
-  }
+  "dependencies": {}
 }

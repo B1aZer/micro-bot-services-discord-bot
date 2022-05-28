@@ -19,19 +19,21 @@ Move notes from private.md
 ## twitter
 
 - [ ] only register with email and add phone later or acc will be locked
-- [ ] local map storage
-- [ ] POST /refresh cron job 15 minutes
-- [ ] start script that run express and /activate
-- [ ] /activate runs pupeteer allow on twitter app
-- [ ] client get working access tokens from db and makes request (client repopulated before each request) 
+- [x] local map storage
+- [x] POST /refresh cron job 15 minutes
+- [x] start script that run express and /activate
+- [x] /activate runs pupeteer allow on twitter app
+- [x] client get working access tokens from db and makes request (client repopulated before each request) 
 
 ## Now
 
 - [ ] RESTART BOT
-- [ ] MONITOR BOT
-- [ ] cron refresh
-- [ ] activate script all  3
+- [x] MONITOR BOT
+- [x] refresh email
+- [x] cron refresh
+- [x] activate script all  3
 - [x] opensea recent are ot working
+- [ ] twitter activate resets all active tokens
 - [ ] add influencer from apes: https://twitter.com/0xskellymode, https://twitter.com/iakimihyb, https://twitter.com/jpeggler, https://twitter.com/MaisonGhost, https://twitter.com/NfThinks, https://twitter.com/SOLBigBrain, https://twitter.com/solplayboy, https://twitter.com/sainteclectic
 - [ ] test from everyone perspective up
 - [x] fix faq => check stable => 
