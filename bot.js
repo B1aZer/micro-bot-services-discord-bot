@@ -1,19 +1,23 @@
 require('dotenv').config();
+
+// ERROR Processing
 const { transporter, mailOptions } = require('../_utils/mail.js');
+// TODO: THIS LINE prevents process exit
 process.on("unhandledRejection", error => console.error("Promise rejection:", error));
 process.on('uncaughtException', err => {
   console.log('There was an uncaught error', err);
   // send mail with defined transport object
   mailOptions.subject = '✖ Discord Bot Has Crashed ✖';
-  mailOptions.text = err;
+  mailOptions.text = JSON.stringify(err);
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       return console.log(error);
     }
     console.log('Message sent: ' + info.response);
+    process.exit(1);
   });
-  process.exit(1); // mandatory (as per the Node.js docs)
 });
+
 const Discord = require("discord.js");
 // partials for DM and reactions real time cache
 const client = new Discord.Client(
