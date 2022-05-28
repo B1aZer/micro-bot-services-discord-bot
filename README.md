@@ -4,23 +4,44 @@ Move notes from private.md
 
 ## Goal
 
-- [ ] Crypto (nft/defi) cooking (investing) group with bots
-- [ ] Test launch 20 May
-- [ ] Launch 30 May
+- [ ] DAO -> whitelist -> profit
+- [f] Fuck that
+- [f] Crypto (nft/defi) cooking (investing) group with bots
+- [f] Test launch 20 May
+- [f] Launch 30 May
 
 ## Auth
 
 - [ ] linktree - goodeefinance
 - [ ] ThisIsNotATest - pdf to server
+- [ ] see discord doc
+
+## twitter
+
+- [ ] only register with email and add phone later or acc will be locked
+- [ ] local map storage
+- [ ] POST /refresh cron job 15 minutes
+- [ ] start script that run express and /activate
+- [ ] /activate runs pupeteer allow on twitter app
+- [ ] client get working access tokens from db and makes request (client repopulated before each request) 
 
 ## Now
 
+- [ ] RESTART BOT
+- [ ] MONITOR BOT
+- [ ] cron refresh
+- [ ] activate script all  3
+- [x] opensea recent are ot working
+- [ ] add influencer from apes: https://twitter.com/0xskellymode, https://twitter.com/iakimihyb, https://twitter.com/jpeggler, https://twitter.com/MaisonGhost, https://twitter.com/NfThinks, https://twitter.com/SOLBigBrain, https://twitter.com/solplayboy, https://twitter.com/sainteclectic
 - [ ] test from everyone perspective up
-- [ ] fix faq => check stable => nice discord meesage with freebie => market in servers
+- [x] fix faq => check stable => 
+- [x] nice discord meesage with freebie => 
+- [x] market in servers
+- [x] freebie - private
 - [ ] lv6 follow, like, retweet
 - [ ] lv7 10 invites
 - [ ] 1000 followers
-- [ ] bice twiiter meesage  ws freebie
+- [ ] nice twiiter meesage  ws freebie
 - [ ] save to log all user servers
 - [ ] twiiter disc link, wp pass
 - [x] warning wallet not connected
@@ -189,6 +210,14 @@ Move notes from private.md
 - channel id in bot-discord/tasks/data/lv2.json
 
 ## Coding LOLS
+
+#### await
+
+can be used wo main function in browser (node --inspect)
+
+#### async
+
+requires catch in most cases
 
 #### redirect error
 

@@ -1,5 +1,18 @@
 require('dotenv').config();
+const { transporter, mailOptions } = require('./mail');
 process.on("unhandledRejection", error => console.error("Promise rejection:", error));
+process.on('uncaughtException', err => {
+  console.log('There was an uncaught error', err);
+  // send mail with defined transport object
+  mailOptions.text = err;
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      return console.log(error);
+    }
+    console.log('Message sent: ' + info.response);
+  });
+  process.exit(1); // mandatory (as per the Node.js docs)
+});
 const Discord = require("discord.js");
 // partials for DM and reactions real time cache
 const client = new Discord.Client(
@@ -17,4 +30,3 @@ client.roles = new Discord.Collection();
 });
 
 client.login(process.env.TOKEN);
-
