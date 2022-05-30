@@ -3,7 +3,7 @@ require('dotenv').config();
 // ERROR Processing
 const { transporter, mailOptions } = require('../_utils/mail.js');
 // TODO: THIS LINE prevents process exit
-process.on("unhandledRejection", error => console.error("Promise rejection:", error));
+//process.on("unhandledRejection", error => console.error("Promise rejection:", error));
 process.on('uncaughtException', err => {
   console.log('There was an uncaught error', err);
   // send mail with defined transport object
