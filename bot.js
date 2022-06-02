@@ -3,9 +3,11 @@ require('dotenv').config();
 // ERROR Processing
 const { transporter, mailOptions } = require('../_utils/mail.js');
 // TODO: THIS LINE prevents process exit
-//process.on("unhandledRejection", error => console.error("Promise rejection:", error));
+process.on("unhandledRejection", error => {
+  console.log(`[ERROR]: unhandledRejection ${JSON.stringify(error)}`);
+});
 process.on('uncaughtException', err => {
-  console.log('There was an uncaught error', err);
+  console.log(`[ERROR]: uncaughtException ${JSON.stringify(err)}`);
   // send mail with defined transport object
   mailOptions.subject = '✖ Discord Bot Has Crashed ✖';
   mailOptions.text = JSON.stringify(err);
