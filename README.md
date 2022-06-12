@@ -1,51 +1,123 @@
-# TODO
-
-Move notes from private.md
+Discord Bot for GooDee.finance
 
 ## Goal
 
 - [ ] DAO -> whitelist -> profit
-- [f] Fuck that
-- [f] Crypto (nft/defi) cooking (investing) group with bots
-- [f] Test launch 20 May
-- [f] Launch 30 May
 
-## Auth
+## PriDE
 
-- [ ] linktree - goodeefinance
-- [ ] ThisIsNotATest - pdf to server
-- [ ] see discord doc
+- when to use events (listeners) one way, when to use requests (calls) two way
+- os queue threshold
+- reddit dunamic caching (on demand) 
 
-## twitter
+## Startup / stability
 
-- [ ] only register with email and add phone later or acc will be locked
-- [x] local map storage
-- [x] POST /refresh cron job 15 minutes
-- [x] start script that run express and /activate
-- [x] /activate runs pupeteer allow on twitter app
-- [x] client get working access tokens from db and makes request (client repopulated before each request) 
+- start logger / 5
+- start twitter / 5
+- ./activate => sign in to accouts server-twitter.log | ./post.sh to check
+- start opensea-monitor / 3 => 4.5
+- start database-mongo => 5
+- start reddit-praw => 5
+- start bot => 3 => 4.5 // fixed, crashes on pia renewal, can be fixed with unhandledRejection listener
 
 ## Now
 
 - [ ] RESTART BOT
+- [x] td: amz return
+- [x] tmr: rent
+- [ ] evn: sell everything (check all wallets)
+- [ ] define twitter keys in utils/config, remove from envs
+- [ ] import v1 for image
+- [ ] list all protal heads
+- [ ] move all sharks to single account and list, magiceden? check all sol wallets
+- [ ] check reserve wallet
+- [x] featured collection with image / description ?
+- [x] top 100 / random 1 / not in mention last week
+- [x] get image, description. Featured nft collection once a day
+- [x] linkedin
+- [x] check ids in unfollow
+- [ ] random images from praw
+- [x] save logs for twitter-mentions, twitter-likes, twitter-follows
+- [f] wl script, min 50 and sort by date? will be same data everyday
+- [f] follow before posting on twitter
+- [f] tw comment with emojus (see below), not spam, only valuable content
+- [ ] useagent for mint script may be outdated
+- [x] replace >> with >, iterate logs, cp prev to new, create (>) new
+- [ ] announce tw in crypto channel discord
+- [x] separate dir for logs? symlinks
+- [ ] test from everyone perspective up
+- [ ] lv6 follow, like, retweet
+- [ ] lv7 10 invites
+- [ ] 1000 followers => collections
+- [ ] nice twiiter meesage  ws freebie
+- [f] twiiter disc link, wp pass
+
+#### Minor
+
+- [ ] check all servers send email
+- [ ] cp log rotation 2>/dev/null
+- [ ] save to log all user servers
+- [ ] make twitter names bold
+- [ ] reactionsNeeded is not needed for react task
+- [ ] precentage green below floor price opensea monitor
+- [x] twiiter / discord invite levels
+- [ ] opensea monitor, push to queue with max 5 times
+- [ ] Market, market paper, give pass, possibly give coins as part of promotion
+- [x] ??
+- [x] Cron for some reason sends message on second try, remove ntf error to file
+- [ ] setColor to dotenv
+- [ ] praw,scraper have secrets in code, search secret, move dotenv
+- [ ] Finish landing. Alternate enter method
+- [x] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
+- [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
+
+#### Completed
+
+- [x] post whitelists. script?
 - [x] MONITOR BOT
+- [x] os monitor now works
+- [x] twitter scripts move config to env
+- [x] wl get log from server
+- [x] log server save post {project, name, data}
+- [x] sav all mentions => notinfile, notinids => follow /get loghserv => follow /post twserv
+- [x] twitter scripts throw like whitelists (check server logs these errors) and save mentions
+- [x] save all twitter-mentions
+- [x] redo upcoming
+- [x] top : mo : 10
+- [x] recent : tu, th, subb : 5-10 : notIn: [0,1,2,3,4,5,6,7]
+- [x] random : everyday : 10 : notIn: [0,1,2,3,4,5,6,7]
+- [x] trending nft notin?
+- [x] rewrite tw server access token from file on refresh
+- [x] makerequest((client) => client.v2.do)
+- [x] except log and repeat request 
+- [x] get follows / save follows
+- [x] follows script
+- [x] unfollows script
+- [x] tw server: Token was not refreshed!
 - [x] refresh email
 - [x] cron refresh
 - [x] activate script all  3
 - [x] opensea recent are ot working
-- [ ] twitter activate resets all active tokens
-- [ ] add influencer from apes: https://twitter.com/0xskellymode, https://twitter.com/iakimihyb, https://twitter.com/jpeggler, https://twitter.com/MaisonGhost, https://twitter.com/NfThinks, https://twitter.com/SOLBigBrain, https://twitter.com/solplayboy, https://twitter.com/sainteclectic
-- [ ] test from everyone perspective up
+- [x] pride (for inteview)
+- [x] usernames: floor, mint, collections?
+- [x] goodee @ add to each twit? check if its ok
+- [x] variable timeout for 2 scripts
+- [x] all accounts same info /name
+- [x] activate => accounts => _air => env
+- [x] create accounts chage ENV for tomorrow.js
+- [x] python script to take file, remove duplicates, sort, parse nicely, count symbols
+- [x] check twit top mints
+- [x] /get twitter server: search recent for specified nft hashtag ?tag=NFT => post ids
+- [x] /post like server twitter post ids => like
+- [x] script like for each tweet id, random interval
+- [x] recent collections not working?
+- [x] queue for opensea ws, check if postings are recent
+- [-] twitter activate resets all active tokens
+- [x] add influencer from apes: https://twitter.com/0xskellymode, https://twitter.com/iakimihyb, https://twitter.com/jpeggler, https://twitter.com/MaisonGhost, https://twitter.com/NfThinks, https://twitter.com/SOLBigBrain, https://twitter.com/solplayboy, https://twitter.com/sainteclectic
 - [x] fix faq => check stable => 
 - [x] nice discord meesage with freebie => 
 - [x] market in servers
 - [x] freebie - private
-- [ ] lv6 follow, like, retweet
-- [ ] lv7 10 invites
-- [ ] 1000 followers
-- [ ] nice twiiter meesage  ws freebie
-- [ ] save to log all user servers
-- [ ] twiiter disc link, wp pass
 - [x] warning wallet not connected
 - [x] warning not eff funds
 - [x] 50 coins per level
@@ -58,19 +130,7 @@ Move notes from private.md
 - [x] check community commands permissions
 - [-] random nft
 - [x] wtf with coins at right click command rank?
-- [ ] start marketing discord/ twitter
-- [ ] reactionsNeeded is not needed for react task
-- [ ] precentage green below floor price opensea monitor
-- [ ] twiiter / discord invite levels
-- [ ] opensea monitor, push to queue with max 5 times
-- [ ] Market, market paper, give pass, possibly give coins as part of promotion
-- [ ] ??
-- [ ] Cron for some reason sends message on second try, remove ntf error to file
-- [ ] setColor to dotenv
-- [ ] praw,scraper have secrets in code, search secret, move dotenv
-- [ ] Finish landing. Alternate enter method
-- [x] use discord builder timestamps and mentions - https://discordjs.guide/popular-topics/builders.html#timestamps
-- [ ] hide command - https://github.com/discordjs/discord-api-types/blob/83f29b692839cc51869bcafdaf387b68731e0a28/rest/v9/index.ts#L756
+- [x] start marketing discord/ twitter
 - [x] replace | with |||, remove unicode from name in logs?
 - [x] refactor bot tasks, make base calss and extend, w o wo json
 - [x] fix motivate
@@ -163,6 +223,12 @@ Move notes from private.md
 - [x] pciky = 0.570104 + 0.081 = 0.651104 387259264034668545
 - [x] screener, lvlup, 
 
+## Tests
+
+- http://localhost:3044/get?name=twitter-following&ids=[1,2,3]&limit=40&order=date&thresh=100
+- http://localhost:3044/get?name=prominent-whitelists&order=random&limit=1
+- http://localhost:3022/followers?username=goodeefi&userId=1508796104254578690
+
 ## Levels
 
 - dummy level1. screener => bot with os monitor group
@@ -173,6 +239,8 @@ Move notes from private.md
 
 ## Discord
 
+chrome://inspect/#devices
+https://discord.com/developers/applications/959176510118453301/oauth2/url-generator
 1. you appeared here and dont know what to do. Experiment!
 2. bot is the only way
 3. design dark souls
@@ -184,6 +252,38 @@ Move notes from private.md
 - b1z
 - nft talk, defi talk, whitelists, twitter inf, discords
 
+## Auth
+
+- [ ] linktree - goodeefinance
+- [ ] https://linktr.ee/admin
+- [ ] ThisIsNotATest - pdf to server
+- [ ] see discord doc
+- [ ] https://account.mongodb.com/account/login?n=%2Fv2%2F6247624b23c8387f5fc7402a%23metrics%2FreplicaSet%2F62476363d3e7f33ae4fe8221%2Fexplorer%2Fgoodeedb%2Fusermodels%2Ffind
+
+## twitter
+
+- [ ] tw playground https://oauth-playground.glitch.me/?id=tweetsRecentSearch&params=%28%27query%21%27%23NFT+lang%3Aen+-is%3Aretweet+-has%3Alinks%27%7Ebody%21%27%27%7Epath%21%28%29%7Emax_results%21%27100%27%7Etweet.fields%21%27%27%29_
+- [ ] tw query: https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query
+- [ ] tw hash analytics: https://www.hashtags.org/analytics/nft/
+- [ ] tw trends https://trends24.in/united-states/
+- [ ] tw search annotations https://developer.twitter.com/en/docs/twitter-api/annotations/overview
+- [ ] tw search metrics (likes, retweets)
+- https://developer.twitter.com/en/portal/dashboard
+- [ ] 1phone 10 accounts
+- [ ] 🗿 🐬 🤴 🐋👴🐨🌝➿🤶🐳
+- [ ] ➵🚏👁⏸🌩🔖📋🆚🎟🏏
+- [ ] 🙈🐶🙊🐾😹🐱🐝🐐🐰🐍
+- [ ] only register with email and add phone later or acc will be locked
+- [x] local map storage
+- [x] POST /refresh cron job 15 minutes
+- [x] start script that run express and /activate
+- [x] /activate runs pupeteer allow on twitter app
+- [x] client get working access tokens from db and makes request (client repopulated before each request) 
+
+## Reddit
+
+- https://www.reddit.com/prefs/apps?newUser=true&showOnboarding=true&signup_survey=true
+- 
 ## Monitor
 
 - htop (mem)
@@ -201,7 +301,7 @@ Move notes from private.md
 ## BOT ideas
 
 - news
-- any good NFT project has You might like projects on the side
+- any good NFT project has "You might like projects on the side" on twitter
 - ai to find projects?
 - discord emoji and stickers
 - imgur images
@@ -247,14 +347,7 @@ Calls first statemns with array as arg wo semicolon
 ```
 will only return first statement wo semicolon
 
-## Startup
-
-- start database-mongo
-- start reddit-praw
-- start opensea-monitor
-- start bot
-
-## Bots
+## Bots Resources
 
 - [ ] https://www.niftyriver.io/analytics/whitelists
 - [ ] https://nftgo.io/whale-tracking/mint
@@ -531,7 +624,7 @@ Tier 4-5 tasks aimed at project success.
 blaze.imba
 kwerkee12
 dmitry.branitskiy1@gmail.com - disabled
-dmitrii.branitskii2
+dmitrii.branitskii2 - discord buy accs contact (Gerb#3719)
 dmitrii.branitskii3
 dmitrii.branitskii4
 
