@@ -23,9 +23,6 @@ Discord Bot for GooDee.finance
 ## Now
 
 - [ ] RESTART BOT
-- [x] td: amz return
-- [x] tmr: rent
-- [ ] evn: sell everything (check all wallets)
 - [ ] define twitter keys in utils/config, remove from envs
 - [ ] import v1 for image
 - [ ] list all protal heads
