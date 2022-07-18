@@ -5,7 +5,7 @@ const fs = require('fs');
 module.exports = class TaskBase {
     constructor(params) {
         Object.assign(this, params);
-        this.loggerInfluencer = fs.createWriteStream(`/home/hipi/Sites/GooDee/_utils/out/tasks/${this.id}.log`, {
+        this.loggerInfluencer = fs.createWriteStream(`../../../../_utils/out/tasks/${this.id}.log`, {
             flags: 'a'
         });
         //defaults

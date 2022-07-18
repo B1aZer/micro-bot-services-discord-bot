@@ -1,7 +1,7 @@
 const { ethers } = require("ethers");
 const fs = require('fs');
 const axios = require('axios')
-const logger = fs.createWriteStream(`/home/hipi/Sites/GooDee/_utils/out/coins/main.log`, {
+const logger = fs.createWriteStream(`../../_utils/out/coins/main.log`, {
     flags: 'a'
 });
 
