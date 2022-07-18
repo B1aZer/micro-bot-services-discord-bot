@@ -2,7 +2,7 @@ const WebSocket = require('ws');
 const Discord = require("discord.js");
 
 module.exports = (client) => {
-    const ws = new WebSocket('ws://localhost:3080');
+    const ws = new WebSocket(`ws://${process.env.OPENSEA_URL}`);
     ws.on('error', (error) => {
         console.log(error);
     });
